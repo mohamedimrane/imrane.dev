@@ -29,7 +29,7 @@
             Contact
           </li>
         </ul>
-        <div class="sm:block lg:hidden">
+        <div class="block md:hidden">
           <svg
             class="w-8 h-8"
             fill="none"
