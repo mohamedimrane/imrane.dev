@@ -25,8 +25,15 @@ export default {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: ["@nuxtjs/tailwindcss"],
 
+  // Settings to generate a 404 page
   generate: {
     fallback: true
+  },
+
+  // Settings for the top progress bar
+  loading: {
+    color: "#329795",
+    height: "5px"
   },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
