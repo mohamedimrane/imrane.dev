@@ -19,7 +19,7 @@
               alt="laravel and vue js on a desk"
             />
             <p
-              class="bg-red-600 text-red-100 md:text-lg lg:text-base p-2 absolute rounded-tr-lg bottom-0 left-0"
+              class="bg-red-600 text-red-100 md:text-lg lg:text-base p-2 absolute rounded-tr-lg bottom-0 left-0 font-varela-round"
             >
               Laravel
             </p>
@@ -49,7 +49,7 @@
               alt="laravel and vue js on a desk"
             />
             <p
-              class="bg-green-500 text-green-100 md:text-lg lg:text-base p-2 absolute rounded-tr-lg bottom-0 left-0"
+              class="bg-green-500 text-green-100 md:text-lg lg:text-base p-2 absolute rounded-tr-lg bottom-0 left-0 font-varela-round"
             >
               Vue.js
             </p>
@@ -79,7 +79,7 @@
               alt="laravel and vue js on a desk"
             />
             <p
-              class="bg-teal-600 text-teal-100 md:text-lg lg:text-base p-2 absolute rounded-tr-lg bottom-0 left-0"
+              class="bg-teal-600 text-teal-100 md:text-lg lg:text-base p-2 absolute rounded-tr-lg bottom-0 left-0 font-varela-round"
             >
               Tailwind CSS
             </p>

@@ -4,7 +4,7 @@ module.exports = {
       fontFamily: {
         "fredoka-one": ['"Fredoka One"'],
         quicksand: ["Quicksand"],
-        "varela - round": ['"Varela Round"']
+        "varela-round": ['"Varela Round"']
       },
       borderRadius: {
         xl: "1rem"
@@ -21,6 +21,8 @@ module.exports = {
       }
     }
   },
-  variants: {},
-  plugins: []
+  variants: {
+    backgroundColor: ["dark"]
+  },
+  plugins: [require("tailwindcss-dark-mode")()]
 };

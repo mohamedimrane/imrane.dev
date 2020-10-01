@@ -8,7 +8,9 @@
         class="w-1/2 mb-2"
         alt="Page not found"
       />
-      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+      <h1
+        class="text-3xl font sm:text-4xl md:text-5xl lg:text-6xl font-varela-round"
+      >
         Page not found
       </h1>
     </div>
