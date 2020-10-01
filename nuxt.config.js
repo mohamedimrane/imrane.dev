@@ -30,10 +30,9 @@ export default {
     fallback: true
   },
 
-  // Settings for the top progress bar
+  // Customize the progress bar
   loading: {
-    color: "#329795",
-    height: "5px"
+    color: "#329795"
   },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
