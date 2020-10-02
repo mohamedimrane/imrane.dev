@@ -36,7 +36,7 @@ import Avatar from "./Avatar";
 
 export default {
   components: {
-    Avatar,
-  },
+    Avatar
+  }
 };
 </script>
