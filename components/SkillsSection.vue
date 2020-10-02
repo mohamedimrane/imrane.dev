@@ -19,7 +19,7 @@
         <img
           src="@/assets/images/technologies/vuejs.svg"
           class="w-12 h-12 sm:w-20 sm:h-20 md:w-32 md:h-32"
-          alt="Vues.js"
+          alt="Vue.js"
         />
         <img
           src="@/assets/images/technologies/tailwindcss.svg"
