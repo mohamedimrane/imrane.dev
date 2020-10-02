@@ -24,29 +24,30 @@
           </svg>
         </div>
         <ul
-          class="navlinks z-50 absolute top-0 left-0 mt-20 -mx-0 w-full bg-gray-100 py-5 text-xl text-gray-700 md:w-auto md:p-0 md:m-0 md:bg-opacity-0 md:static md:flex md:flex-row md:justify-between"
+          class="navlinks z-50 absolute top-0 left-0 mt-20 -mx-0 w-full bg-gray-100 py-5 text-xl md:text-2xl text-gray-700 md:w-auto md:p-0 md:m-0 md:bg-opacity-0 md:static md:flex md:flex-row md:justify-between"
           :class="{ hidden: !isMenuOpen }"
         >
-          <li
+          <nuxt-link
+            to="#about"
+            tag="li"
             class="mx-8 transition duration-300 ease-in-out hover:text-teal-600 cursor-pointer"
           >
-            About
-          </li>
-          <li
+            <a>About</a>
+          </nuxt-link>
+          <nuxt-link
+            to="#skills"
+            tag="li"
             class="mx-8 transition duration-300 ease-in-out hover:text-teal-600 cursor-pointer"
           >
-            Skills
-          </li>
-          <li
+            <a>Skills</a>
+          </nuxt-link>
+          <nuxt-link
+            to="#recent-blog-posts"
+            tag="li"
             class="mx-8 transition duration-300 ease-in-out hover:text-teal-600 cursor-pointer"
           >
-            Blog
-          </li>
-          <li
-            class="mx-8 transition duration-300 ease-in-out hover:text-teal-600 cursor-pointer"
-          >
-            Contact
-          </li>
+            <a>Blog</a>
+          </nuxt-link>
         </ul>
       </div>
     </div>

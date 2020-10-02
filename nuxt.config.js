@@ -18,7 +18,9 @@ export default {
   css: [],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [],
+  plugins: [
+    // "~/plugins/directives.js"
+  ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -34,6 +36,17 @@ export default {
   // Customize the progress bar
   loading: {
     color: "#329795"
+  },
+
+  // Router options
+  router: {
+    scrollBehavior(to, from, savedPosition) {
+      if (to.hash) {
+        return { selector: to.hash };
+      }
+
+      return { x: 0, y: 0 };
+    }
   },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
