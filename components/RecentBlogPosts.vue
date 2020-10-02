@@ -27,13 +27,13 @@
           <div
             class="pb-5 pt-1 px-6 bg-red-600 text-red-100 font-quicksand md:min-h-full lg:h-auto"
           >
-            <h2 class="md:text-4xl lg:text-2xl font-bold">
+            <h2 class="text-xl md:text-2xl lg:text-2xl font-bold">
               Lorem ipsum Dolore Sit Amet
             </h2>
-            <p class="md:text-2xl lg:text-lg pb-1">
+            <p class="text-base md:text-lg lg:text-lg">
               Say what your post is about
             </p>
-            <span class="md:text-base lg:text-xs">
+            <span class="text-xs md:text-xs lg:text-xs">
               <span class="font-bold">18 August 2020 &bull; </span>
               Imrane Chehabi
             </span>
@@ -57,13 +57,13 @@
           <div
             class="pb-5 pt-1 px-6 bg-green-500 text-green-100 font-quicksand md:min-h-full lg:h-auto"
           >
-            <h2 class="md:text-4xl lg:text-2xl font-bold">
+            <h2 class="text-xl md:text-2xl lg:text-2xl font-bold">
               Lorem ipsum Dolore Sit Amet
             </h2>
-            <p class="md:text-2xl lg:text-lg pb-1">
+            <p class="text-base md:text-lg lg:text-lg">
               Say what your post is about
             </p>
-            <span class="md:text-base lg:text-xs">
+            <span class="text-xs md:text-xs lg:text-xs">
               <span class="font-bold">18 August 2020 &bull; </span>
               Imrane Chehabi
             </span>
@@ -88,13 +88,13 @@
             <div
               class="pb-5 pt-1 px-6 bg-teal-600 text-teal-100 font-quicksand md:min-h-full lg:h-auto"
             >
-              <h2 class="md:text-4xl lg:text-2xl font-bold">
+              <h2 class="text-xl md:text-2xl lg:text-2xl font-bold">
                 Lorem ipsum Dolore Sit Amet
               </h2>
-              <p class="md:text-2xl lg:text-lg pb-1">
+              <p class="text-base md:text-lg lg:text-lg">
                 Say what your post is about
               </p>
-              <span class="md:text-base lg:text-xs">
+              <span class="text-xs md:text-xs lg:text-xs">
                 <span class="font-bold">18 August 2020 &bull;</span> Imrane
                 Chehabi
               </span>

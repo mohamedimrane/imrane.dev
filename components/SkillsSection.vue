@@ -9,7 +9,7 @@
         </h2>
       </div>
       <div
-        class="grid grid-cols-2 w-full justify-items-center gap-y-0 md:grid-cols-3 md:gap-x-64 md:gap-y-5"
+        class="grid grid-cols-2 w-3/4 sm:w-full justify-items-center md:grid-cols-3 md:gap-x-64 gap-y-3 sm:gap-y-5 md:gap-y-5 lg:gap-y-10"
       >
         <img
           src="@/assets/images/technologies/laravel.svg"
@@ -56,9 +56,9 @@ export default {
         { name: "Tailwind CSS", image: "tailwindcss.svg" },
         { name: "Nuxt.js", image: "nuxtjs.svg" },
         { name: "CSS 3", image: "css3.svg" },
-        { name: "HTML 5", image: "html5.svg" },
-      ],
+        { name: "HTML 5", image: "html5.svg" }
+      ]
     };
-  },
+  }
 };
 </script>
