@@ -52,7 +52,8 @@ export default {
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/content
-    "@nuxt/content"
+    "@nuxt/content",
+    ["vue-scrollto/nuxt", { duration: 500, easing: "ease-in-out" }]
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/content-config)
