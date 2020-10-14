@@ -17,12 +17,12 @@ export default {
     checkDarkMode() {
       if (
         window.matchMedia &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches
+        window.matchMedia('(prefers-color-scheme: dark)').matches
       ) {
-        return true;
+        return true
       }
-      return false;
-    }
-  }
-};
+      return false
+    },
+  },
+}
 </script>

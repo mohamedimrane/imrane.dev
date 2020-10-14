@@ -1,3 +1,5 @@
+import scrollBehavior from './config/router.scrollBehavior'
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -41,13 +43,7 @@ export default {
 
   // Router options
   router: {
-    scrollBehavior(to, from, savedPosition) {
-      if (to.hash) {
-        return { selector: to.hash }
-      }
-
-      return { x: 0, y: 0 }
-    },
+    scrollBehavior,
   },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
