@@ -3,7 +3,7 @@
     <div class="mx-auto container flex flex-col items-center">
       <div class="mb-4">
         <h2
-          class="font-quicksand font-medium sm:text-2xl md:text-3xl lg:text-4xl text-gray-900"
+          class="font-quicksand font-medium text-2xl md:text-3xl lg:text-4xl text-gray-900"
         >
           Skills and Expertise
         </h2>
@@ -51,14 +51,14 @@ export default {
   data() {
     return {
       technologies: [
-        { name: "Laravel", image: "laravel.svg" },
-        { name: "Vue.js", image: "vuejs.svg" },
-        { name: "Tailwind CSS", image: "tailwindcss.svg" },
-        { name: "Nuxt.js", image: "nuxtjs.svg" },
-        { name: "CSS 3", image: "css3.svg" },
-        { name: "HTML 5", image: "html5.svg" }
-      ]
-    };
-  }
-};
+        { name: 'Laravel', image: 'laravel.svg' },
+        { name: 'Vue.js', image: 'vuejs.svg' },
+        { name: 'Tailwind CSS', image: 'tailwindcss.svg' },
+        { name: 'Nuxt.js', image: 'nuxtjs.svg' },
+        { name: 'CSS 3', image: 'css3.svg' },
+        { name: 'HTML 5', image: 'html5.svg' },
+      ],
+    }
+  },
+}
 </script>

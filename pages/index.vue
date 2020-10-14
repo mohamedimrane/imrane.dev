@@ -1,15 +1,23 @@
 <template>
   <div>
-    <AppNavbar id="navbar" class="my-3" />
-    <div id="content" class="mb-8 md:my-16 lg:my-20">
-      <AboutSection id="about" class="mb-6 sm:mb-8 md:mb-16 lg:mb-20" />
-      <SkillsSection id="skills" class="mb-6 sm:mb-8 md:mb-16 lg:mb-20" />
-      <RecentBlogPosts id="recent-blog-posts" />
+    <AppNavbar id="navbar" class="" />
+    <div id="content" class="my-16 md:my-18 lg:my-22">
+      <AboutSection id="about" class="mb-14 md:mb-16 lg:mb-20" />
+      <SkillsSection id="skills" class="mb-14 md:mb-16 lg:mb-20" />
+      <RecentBlogPostsSection id="recent-blog-posts" />
     </div>
     <AppFooter id="footer" />
+    <AppThanks id="thanks" />
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  mounted() {
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+      setTimeout(() => this.$nuxt.$loading.finish(), 500)
+    })
+  },
+}
 </script>

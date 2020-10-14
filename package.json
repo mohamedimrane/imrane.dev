@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.8.1",
+    "@tailwindcss/typography": "^0.2.0",
     "core-js": "^3.6.5",
     "nuxt": "^2.14.5",
     "vue-clickaway": "^2.2.2",
