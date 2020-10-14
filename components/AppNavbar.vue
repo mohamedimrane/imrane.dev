@@ -1,5 +1,5 @@
 <template>
-  <div class="relative md:static bg-white">
+  <div class="z-50 relative md:static bg-white">
     <transition name="slide">
       <NavbarLinksHiddenable
         class="hiddenable-menu"
@@ -7,7 +7,7 @@
         v-if="isMenuOpen"
       />
     </transition>
-    <div class="h-14 container mx-auto">
+    <div class="h-14 w-11/12 md:container mx-auto bg-white z-50">
       <div class="flex flex-row justify-between items-center">
         <h1 class="font-fredoka-one text-5xl lg:text-6xl text-teal-600">
           Imrane

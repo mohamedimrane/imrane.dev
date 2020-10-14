@@ -56,3 +56,13 @@ export default {
   }
 }
 </style>
+
+<script>
+export default {
+  methods: {
+    whenScrollignToSectionIsDone(section) {
+      this.$router.push('/#' + section)
+    },
+  },
+}
+</script>
