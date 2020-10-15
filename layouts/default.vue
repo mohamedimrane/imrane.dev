@@ -1,6 +1,9 @@
 <template>
   <div>
+    <AppNavbar id="navbar" />
     <Nuxt />
+    <AppFooter id="footer" />
+    <AppThanks id="thanks" />
   </div>
 </template>
 
