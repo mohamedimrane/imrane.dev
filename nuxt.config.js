@@ -50,7 +50,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    ['vue-scrollto/nuxt', { duration: 500, easing: 'ease-in-out' }],
+    ['vue-scrollto/nuxt', { duration: 300, easing: 'ease-in-out' }],
     '@aceforth/nuxt-optimized-images',
   ],
 
