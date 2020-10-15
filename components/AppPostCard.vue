@@ -9,16 +9,12 @@
         alt="laravel and vue js on a desk"
       />
       <p
-        class="md:text-lg lg:text-base p-2 absolute rounded-tr-lg bottom-0 left-0 font-varela-round"
-        :class="`bg-${cardColor}-600 text-${cardColor}-100`"
+        class="category-badge md:text-lg lg:text-base p-2 absolute rounded-tr-lg bottom-0 left-0 font-varela-round"
       >
         {{ category }}
       </p>
     </div>
-    <div
-      class="pb-5 pt-1 px-6 font-quicksand"
-      :class="`bg-${cardColor}-600 text-${cardColor}-100`"
-    >
+    <div class="details pb-5 pt-1 px-6 font-quicksand">
       <h2 class="text-xl md:text-2xl font-bold leading-loose">
         {{ title }}
       </h2>
