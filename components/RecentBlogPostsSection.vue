@@ -47,16 +47,19 @@ export default {}
 <style scroped>
 .card-1 .category-badge,
 .card-1 .details {
-  @apply bg-red-600 text-red-100;
+  @apply bg-red-600;
+  @apply text-red-100;
 }
 
 .card-2 .category-badge,
 .card-2 .details {
-  @apply bg-green-600 text-green-100;
+  @apply bg-green-600;
+  @apply text-green-100;
 }
 
 .card-3 .category-badge,
 .card-3 .details {
-  @apply bg-teal-600 text-teal-100;
+  @apply bg-teal-600;
+  @apply text-teal-100;
 }
 </style>
