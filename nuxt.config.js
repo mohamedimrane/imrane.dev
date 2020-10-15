@@ -51,6 +51,7 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     ['vue-scrollto/nuxt', { duration: 500, easing: 'ease-in-out' }],
+    '@aceforth/nuxt-optimized-images',
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/content-config)
