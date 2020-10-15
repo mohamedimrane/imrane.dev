@@ -12,32 +12,32 @@
         class="grid grid-cols-2 w-3/4 sm:w-full justify-items-center md:grid-cols-3 md:gap-x-64 gap-y-3 sm:gap-y-5 md:gap-y-5 lg:gap-y-10"
       >
         <img
-          src="@/assets/images/technologies/laravel.svg"
+          src="@/assets/images/technologies/laravel.svg?original"
           class="w-12 h-12 sm:w-20 sm:h-20 md:w-32 md:h-32"
           alt="Laravel"
         />
         <img
-          src="@/assets/images/technologies/vuejs.svg"
+          src="@/assets/images/technologies/vuejs.svg?original"
           class="w-12 h-12 sm:w-20 sm:h-20 md:w-32 md:h-32"
           alt="Vue.js"
         />
         <img
-          src="@/assets/images/technologies/tailwindcss.svg"
+          src="@/assets/images/technologies/tailwindcss.svg?original"
           class="w-12 h-12 sm:w-20 sm:h-20 md:w-32 md:h-32"
           alt="Tailwind CSS"
         />
         <img
-          src="@/assets/images/technologies/nuxtjs.svg"
+          src="@/assets/images/technologies/nuxtjs.svg?original"
           class="w-12 h-12 sm:w-20 sm:h-20 md:w-32 md:h-32"
           alt="Nuxt.js"
         />
         <img
-          src="@/assets/images/technologies/css3.svg"
+          src="@/assets/images/technologies/css3.svg?original"
           class="w-12 h-12 sm:w-20 sm:h-20 md:w-32 md:h-32"
           alt="CSS 3"
         />
         <img
-          src="@/assets/images/technologies/html5.svg"
+          src="@/assets/images/technologies/html5.svg?original"
           class="w-12 h-12 sm:w-20 sm:h-20 md:w-32 md:h-32"
           alt="HTML 5"
         />

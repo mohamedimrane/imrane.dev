@@ -54,6 +54,11 @@ export default {
     '@aceforth/nuxt-optimized-images',
   ],
 
+  optimizedImages: {
+    optimizeImages: true,
+    optimizeImagesInDev: true,
+  },
+
   // Content module configuration (https://go.nuxtjs.dev/content-config)
   content: {},
 
