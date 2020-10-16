@@ -7,7 +7,7 @@
     >
       <div class="flex flex-row items-center">
         <nuxt-link
-          :to="article.slug"
+          :to="`blog/${article.slug}`"
           class="text-3xl text-teal-700 font-medium"
         >
           {{ article.title }}

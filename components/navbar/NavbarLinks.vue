@@ -34,7 +34,7 @@
         }"
         class="mx-8 transition duration-300 ease-in-out hover:text-teal-600 cursor-pointer"
       >
-        Blog
+        Recent Blog Posts
       </li>
     </template>
     <template v-if="!pageIsHome">
@@ -57,9 +57,16 @@
         to="/#recent-blog-posts"
         class="mx-8 transition duration-300 ease-in-out hover:text-teal-600 cursor-pointer"
       >
-        <a>Blog</a>
+        <a>Recent Blog Posts</a>
       </nuxt-link>
     </template>
+    <nuxt-link
+      tag="li"
+      to="/blog"
+      class="mx-8 transition duration-300 ease-in-out hover:text-teal-600 cursor-pointer"
+    >
+      <a>Blog</a>
+    </nuxt-link>
   </ul>
 </template>
 
