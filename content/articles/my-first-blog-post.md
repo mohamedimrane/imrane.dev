@@ -1,5 +1,6 @@
 ---
 title: "My Very first post"
+category: "Laravel"
 image: "main.png"
 ---
 
