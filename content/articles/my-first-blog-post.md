@@ -1,6 +1,7 @@
 ---
 title: "My Very first post"
 category: "Laravel"
+description: "Lorem Ipsum Sit Dolor Amet"
 image: "main.png"
 ---
 
