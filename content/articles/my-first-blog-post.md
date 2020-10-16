@@ -22,3 +22,11 @@ This is some more info
 This is some more info
 
 Welcome to my first blog post using content module
+
+```html
+<p>Hi</p>
+
+<script>
+  let variable = await $content('articles', params.slug)
+</script>
+```
