@@ -1,6 +1,9 @@
 module.exports = {
   theme: {
     extend: {
+      colors: {
+        darkblue: '#30495E',
+      },
       fontFamily: {
         'fredoka-one': ['"Fredoka One"'],
         quicksand: ['Quicksand'],
@@ -25,9 +28,7 @@ module.exports = {
       },
     },
   },
-  variants: {
-    backgroundColor: ['dark'],
-  },
+  variants: {},
   plugins: [
     require('tailwindcss-dark-mode')(),
     require('@tailwindcss/typography'),

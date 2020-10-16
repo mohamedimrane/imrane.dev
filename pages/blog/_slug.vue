@@ -55,3 +55,7 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+/** Style for the nuxt-content*/
+</style>
