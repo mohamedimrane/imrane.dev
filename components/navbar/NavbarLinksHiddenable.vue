@@ -1,5 +1,7 @@
 <template>
-  <ul class="absolute w-full top-14 -z-1 bg-white text-2xl text-gray-700">
+  <ul
+    class="absolute w-full top-14 -z-1 bg-white text-2xl shadow-xl text-gray-700"
+  >
     <template v-if="pageIsHome">
       <li
         v-scroll-to="{
@@ -74,18 +76,6 @@ export default {
 }
 </script>
 
-<style scoped>
-@media screen and (max-width: 767px) {
-  li {
-    border-bottom: 1px solid #718096;
-    padding: 0.5rem 0.2rem;
-  }
-  li:nth-last-child(1) {
-    border-bottom: none;
-  }
-}
-</style>
-
 <script>
 export default {
   methods: {
@@ -100,3 +90,15 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+@media screen and (max-width: 767px) {
+  li {
+    border-bottom: 1px solid #718096;
+    padding: 0.5rem 0.2rem;
+  }
+  li:nth-last-child(1) {
+    border-bottom: none;
+  }
+}
+</style>
