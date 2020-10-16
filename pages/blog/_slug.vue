@@ -4,7 +4,12 @@
       {{ article.title }}
     </h1>
     <p class="text-sm text-gray-700 mb-4">
-      <span class="font-bold">Mohamed Imrane Chehabi &bull;</span>
+      <span class="font-bold">
+        <a href="https://github.com/mohamedimrane" class="hover:underline">
+          Mohamed Imrane Chehabi
+        </a>
+        &bull;
+      </span>
       {{ formatDate(article.createdAt) }}
     </p>
     <img
@@ -18,7 +23,7 @@
         <li
           v-for="link of article.toc"
           :key="link.id"
-          class="text-gray-900 block text-lg font-quicksand font-medium"
+          class="text-gray-900 block text-lg font-quicksand font-medium cursor-pointer"
           :class="{ 'py-2': link.depth === 2, 'ml-4 pb-2': link.depth === 3 }"
           v-scroll-to="{
             el: `#${link.id}`,
@@ -28,7 +33,12 @@
           }"
         >
           <a>
-            &bull; <span class="text-teal-600 ml-2">{{ link.text }}</span>
+            &bull;
+            <span
+              class="text-teal-600 hover:text-teal-800 transition duration-150 ease-in-out ml-2"
+            >
+              {{ link.text }}
+            </span>
           </a>
         </li>
       </ul>
