@@ -64,6 +64,10 @@ export default {
     markdown: {
       prism: {
         theme: 'prism-themes/themes/prism-material-oceanic.css',
+        // theme: 'prism-themes/themes/prism-nord.css',
+        // theme: 'prism-themes/themes/prism-coldark-cold.css',
+        // theme: 'prism-themes/themes/prism-darcula.css',
+        // theme: 'prism-themes/themes/prism-vscode.css',
       },
     },
   },

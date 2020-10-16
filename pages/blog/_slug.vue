@@ -18,7 +18,7 @@
         <li
           v-for="link of article.toc"
           :key="link.id"
-          class="text-gray-900 block text-md font-quicksand font-medium"
+          class="text-gray-900 block text-lg font-quicksand font-medium"
           :class="{ 'py-2': link.depth === 2, 'ml-4 pb-2': link.depth === 3 }"
           v-scroll-to="{
             el: `#${link.id}`,
@@ -33,7 +33,7 @@
         </li>
       </ul>
     </div>
-    <nuxt-content :document="article" />
+    <nuxt-content :document="article" class="text-gray-800" />
   </div>
 </template>
 
@@ -56,6 +56,4 @@ export default {
 }
 </script>
 
-<style scoped>
-/** Style for the nuxt-content*/
-</style>
+<style></style>
