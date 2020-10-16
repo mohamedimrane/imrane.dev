@@ -24,7 +24,7 @@ This is some more info
 
 Welcome to my first blog post using content module
 
-```html
+```html nuxt.js.config
 <p>Hi</p>
 
 <script>
