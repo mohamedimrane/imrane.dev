@@ -9,9 +9,15 @@
     </transition>
     <div class="h-14 w-11/12 md:container mx-auto bg-white z-50">
       <div class="flex flex-row justify-between items-center">
-        <h1 class="font-fredoka-one text-5xl lg:text-6xl text-teal-600">
-          Imrane
-        </h1>
+        <nuxt-link
+          to="/"
+          class="font-fredoka-one text-5xl lg:text-6xl text-teal-600"
+          tag="h1"
+        >
+          <a>
+            Imrane
+          </a>
+        </nuxt-link>
         <div>
           <div
             class="block md:hidden"
