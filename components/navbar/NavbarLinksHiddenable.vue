@@ -72,7 +72,11 @@
 
 <script>
 export default {
-  props: ['shown'],
+  props: {
+    shown: {
+      required: true,
+    },
+  },
 }
 </script>
 
