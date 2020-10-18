@@ -92,3 +92,7 @@ sw.*
 # VSCode
 
 .vscode
+
+# For testing
+
+fontsource-quicksand
