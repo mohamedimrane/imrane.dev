@@ -1,9 +1,6 @@
 module.exports = {
   theme: {
     extend: {
-      colors: {
-        darkblue: '#30495E',
-      },
       fontFamily: {
         'fredoka-one': ['"Fredoka One"'],
         quicksand: ['Quicksand'],

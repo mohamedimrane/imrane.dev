@@ -49,7 +49,11 @@
 .nuxt-content p {
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
-  @apply font-medium text-justify font-quicksand;
+  @apply font-medium text-justify font-quicksand leading-relaxed;
+}
+
+.nuxt-content .nuxt-content-highlight {
+  @apply relative;
 }
 
 .nuxt-content pre {
@@ -58,6 +62,10 @@
   font-size: 0.9rem;
   background-color: #30495e !important;
   @apply rounded-md py-6 px-3 my-3;
+}
+
+.nuxt-content span.filename {
+  @apply absolute top-0 right-0 mr-2 mt-1 text-gray-500 z-10;
 }
 
 .nuxt-content a {
@@ -75,7 +83,7 @@
 
 .nuxt-content ol li {
   list-style: decimal;
-  @apply ml-6 font-medium font-quicksand text-sm;
+  @apply ml-6 font-medium font-quicksand text-sm leading-relaxed;
 }
 
 .nuxt-content ul {
@@ -85,7 +93,7 @@
 
 .nuxt-content ul li {
   list-style: disc;
-  @apply ml-6 font-medium font-quicksand text-sm;
+  @apply ml-6 font-medium font-quicksand text-sm leading-relaxed;
 }
 
 .nuxt-content img {
@@ -97,9 +105,20 @@
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
   border-left: #718096 solid 6px;
-  @apply font-medium font-quicksand bg-gray-200 px-2 py-4 shadow-inner;
+  @apply font-medium font-quicksand bg-gray-200 px-2 py-4 shadow-inner leading-relaxed;
 }
 
 .nuxt-content hr {
   @apply -mx-4 my-4;
+}
+
+.nuxt-content div div pre {
+  margin: 0;
+  padding: 0;
+  @apply font-mono font-normal;
+}
+
+.nuxt-content .tabs {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
 }

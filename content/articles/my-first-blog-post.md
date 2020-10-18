@@ -24,7 +24,7 @@ This is some more info
 
 Welcome to my first blog post using content module
 
-```html nuxt.js.config
+```html{1}[example.js]
 <p>Hi</p>
 
 <script>
@@ -76,3 +76,19 @@ But I have to admit, tasks lists are my favorite:
 When you include a task list in the first comment of an Issue, you will see a helpful progress bar in your list of issues. It works in Pull Requests, too!
 
 And, of course emoji!
+
+<tabs>
+  <tab name="NPM">NPM is awesome</tab>
+  <tab name="YARN" :selected="true">Yarn is fast</tab>
+  <tab name="Install">   
+
+  ```js
+  consolde.log("Hi")
+  consolde.error("Hi")
+  array.forEach(el => {
+    el.mount()
+  })
+  ```
+  
+  </tab>
+</tabs>
