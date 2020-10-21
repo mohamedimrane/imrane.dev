@@ -44,7 +44,7 @@
 export default {}
 </script>
 
-<style scroped>
+<style>
 .card-1 .category-badge,
 .card-1 .details {
   @apply bg-red-600 text-red-100;
