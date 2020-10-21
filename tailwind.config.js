@@ -5,6 +5,7 @@ module.exports = {
         'fredoka-one': ['"Fredoka One"'],
         quicksand: ['Quicksand'],
         'varela-round': ['"Varela Round"'],
+        'open-sans': ['"Open Sans"'],
       },
       borderRadius: {
         xl: '1rem',
