@@ -1,5 +1,5 @@
 <template>
-  <div id="content" class="my-16 md:my-18 lg:my-22 w-3/6 mx-auto">
+  <div id="content" class="my-16 md:my-18 lg:my-22 w-5/12 mx-auto">
     <h1 class="text-5xl text-gray-800 font-quicksand font-bold mb-4">
       {{ article.title }}
     </h1>
