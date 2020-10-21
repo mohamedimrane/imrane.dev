@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-gray-200 w-5/6 mx-auto lg:w-3/12 mb-4 rounded-xl overflow-hidden transition duration-300 ease-in-out hover:shadow-xl"
+    class="bg-gray-200 w-5/6 mx-auto lg:w-3/12 mb-4 rounded-xl overflow-hidden transition duration-300 ease-in-out hover:shadow-xl card"
   >
     <div class="relative">
       <img
@@ -41,3 +41,9 @@ export default {
   ],
 }
 </script>
+
+<style scoped>
+.card:hover {
+  transform: translateY(-10px);
+}
+</style>
