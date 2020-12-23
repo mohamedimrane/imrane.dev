@@ -13,7 +13,7 @@
         </nav>
       </header>
   
-      <main class="w-8/12 mx-auto mt-10">
+      <main class="w-6/12 mx-auto mt-20">
         <slot />
       </main>
     </div>
