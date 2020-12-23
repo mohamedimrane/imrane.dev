@@ -6,9 +6,9 @@
   
         <nav class="w-3/12 mt-auto">
           <ul class="flex justify-between">
-            <li class="font-bold uppercase cursor-pointer text-natural-black font-nunito-sans">ABOUT</li>
-            <li class="font-bold uppercase cursor-pointer text-natural-black font-nunito-sans">SKILLS</li>
-            <li class="font-bold uppercase cursor-pointer text-natural-black font-nunito-sans">BLOG</li>
+            <li class="font-semibold uppercase cursor-pointer text-natural-black font-nunito-sans">ABOUT</li>
+            <li class="font-semibold uppercase cursor-pointer text-natural-black font-nunito-sans">SKILLS</li>
+            <li class="font-semibold uppercase cursor-pointer text-natural-black font-nunito-sans">BLOG</li>
           </ul>
         </nav>
       </header>
