@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-between h-screen">
+  <div class="flex flex-col justify-between min-h-screen">
     <div>
       <header class="flex justify-between w-4/6 mx-auto my-6">
         <g-image src="~/assets/navbar-logo.svg" />
@@ -13,12 +13,12 @@
         </nav>
       </header>
   
-      <main class="w-8/12 mx-auto">
+      <main class="w-8/12 mx-auto mt-10">
         <slot />
       </main>
     </div>
 
-    <footer class="py-5 bg-gray-200">
+    <footer class="py-5 mt-16 bg-gray-200">
       <div class="flex justify-between w-4/6 mx-auto">
         <span class="font-semibold font-nunito-sans">
           Built with <a href="https://gridsome.org/" class="text-green-500 cursor-pointer">Gridsome</a>. 
