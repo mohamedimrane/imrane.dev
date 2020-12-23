@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'nunito-sans': ['Nunito Sans'],
+        'fredoka-one': ['Fredoka One'],
       },
       colors: {
         'natural-black': '#363636',

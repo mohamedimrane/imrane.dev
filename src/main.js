@@ -7,6 +7,7 @@ import "fontsource-nunito-sans/latin-400.css" // Normal
 import "fontsource-nunito-sans/latin-600.css" // Semibold
 import "fontsource-nunito-sans/latin-700.css" // Bold
 import "fontsource-nunito-sans/latin-800.css" // Extrabold
+import "fontsource-fredoka-one";
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
