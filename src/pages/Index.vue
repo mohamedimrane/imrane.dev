@@ -12,12 +12,12 @@
     <section id="skills" class="mt-20">
       <h2 class="text-4xl font-bold text-center text-natural-black">Skills and Knowledge</h2>
       <div class="grid grid-cols-3 mx-auto place-items-center mt-7 gap-y-10">
-        <g-image src="~/assets/logos/laravel.svg" alt="Laravel" />
-        <g-image src="~/assets/logos/vuejs.svg" alt="Vue.js" />
-        <g-image src="~/assets/logos/octobercms.svg" alt="October CMS" />
-        <g-image src="~/assets/logos/nuxtjs.svg" alt="Nuxt JS" />
-        <g-image src="~/assets/logos/tailwindcss.svg" alt="Tailwind CSS" />
-        <g-image src="~/assets/logos/gridsome.svg" alt="Gridsome" />
+        <g-image class="w-20" src="~/assets/logos/laravel.svg" alt="Laravel" />
+        <g-image class="w-20" src="~/assets/logos/vuejs.svg" alt="Vue.js" />
+        <g-image class="w-20" src="~/assets/logos/octobercms.svg" alt="October CMS" />
+        <g-image class="w-20" src="~/assets/logos/nuxtjs.svg" alt="Nuxt JS" />
+        <g-image class="w-20" src="~/assets/logos/tailwindcss.svg" alt="Tailwind CSS" />
+        <g-image class="w-20" src="~/assets/logos/gridsome.svg" alt="Gridsome" />
       </div>
     </section>
   </Layout>
