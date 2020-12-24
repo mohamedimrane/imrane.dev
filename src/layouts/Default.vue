@@ -26,8 +26,8 @@
         </span>
 
         <div class="flex justify-between w-1/12">
-          <a href="https://twitter.com/ImraneChehabi"><g-image src="~/assets/logos/twitter.svg"/></a>
-          <a href="https://github.com/mohamedimrane"><g-image src="~/assets/logos/github.svg"/></a>
+          <a href="https://twitter.com/ImraneChehabi"><g-image src="~/assets/logos/twitter.svg" /></a>
+          <a href="https://github.com/mohamedimrane"><g-image src="~/assets/logos/github.svg" /></a>
         </div>
       </div>
     </footer>
