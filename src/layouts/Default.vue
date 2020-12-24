@@ -1,14 +1,14 @@
 <template>
-  <div class="flex flex-col justify-between min-h-screen">
+  <div class="flex flex-col justify-between min-h-screen font-nunito-sans">
     <div>
       <header class="flex justify-between w-4/6 mx-auto my-6">
         <g-image src="~/assets/navbar-logo.svg" />
   
         <nav class="w-3/12 mt-auto">
           <ul class="flex justify-between">
-            <li class="font-bold uppercase cursor-pointer text-natural-black font-nunito-sans">ABOUT</li>
-            <li class="font-bold uppercase cursor-pointer text-natural-black font-nunito-sans">SKILLS</li>
-            <li class="font-bold uppercase cursor-pointer text-natural-black font-nunito-sans">BLOG</li>
+            <li class="font-bold uppercase cursor-pointer text-natural-black">ABOUT</li>
+            <li class="font-bold uppercase cursor-pointer text-natural-black">SKILLS</li>
+            <li class="font-bold uppercase cursor-pointer text-natural-black">BLOG</li>
           </ul>
         </nav>
       </header>
@@ -20,7 +20,7 @@
 
     <footer class="py-5 mt-20 bg-gray-200">
       <div class="flex justify-between w-4/6 mx-auto">
-        <span class="font-semibold font-nunito-sans">
+        <span class="font-semibold">
           Built with <a href="https://gridsome.org/" class="text-green-500 cursor-pointer">Gridsome</a>. 
           Hosted on <a href="https://www.netlify.com/" class="cursor-pointer text-teal">Netlify</a> and <a href="https://github.com/" class="cursor-pointer text-teal">Github</a>.
         </span>

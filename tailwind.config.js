@@ -9,7 +9,9 @@ module.exports = {
       },
       colors: {
         'natural-black': '#363636',
-        'teal': '#2397B0'
+        'teal': '#2397B0',
+        'light-teal': '#23afa6',
+        'dark-teal': '#238caf'
       }
     }
   },
