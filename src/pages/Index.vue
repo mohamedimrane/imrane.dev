@@ -11,7 +11,7 @@
 
     <section id="skills" class="mt-28">
       <h2 class="text-4xl font-bold text-center text-natural-black">Skills and Knowledge</h2>
-      <div class="grid grid-cols-3 mx-auto mt-5 place-items-center gap-y-10">
+      <div class="grid grid-cols-3 mx-auto mt-10 place-items-center gap-y-10">
         <g-image class="w-20" src="~/assets/logos/laravel.svg" alt="Laravel" />
         <g-image class="w-20" src="~/assets/logos/vuejs.svg" alt="Vue.js" />
         <g-image class="w-20" src="~/assets/logos/octobercms.svg" alt="October CMS" />
@@ -23,7 +23,7 @@
 
     <section id="contact-me" class="mt-28">
       <h2 class="text-4xl font-bold text-center text-natural-black">Contact Me</h2>
-      <h3 class="mt-5 text-2xl text-natural-black">Looking to start a project?</h3>
+      <h3 class="mt-10 text-2xl text-natural-black">Looking to start a project?</h3>
       <h4 class="mt-2 text-lg text-gray-400">Use the form below or send me an <a class="text-teal" href="mailto:imrane@chehabi.ma">email me</a></h4>
       <form @click.prevent="" class="mt-5">
         <div class="grid grid-cols-2 gap-x-4">
