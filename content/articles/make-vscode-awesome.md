@@ -1,6 +1,7 @@
 ---
 title: Make Vscode Awesome
 tags: [vscode, productivity]
+updated_at: 2020-12-25T22:49:56.564Z
 ---
 
 ## Removing useless things
