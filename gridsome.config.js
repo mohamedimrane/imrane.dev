@@ -10,15 +10,15 @@ module.exports = {
     {
       use: "gridsome-plugin-tailwindcss",
       /**
-    * These are the default options.
+        * These are the default options.
 
-    options: {
-      tailwindConfig: './tailwind.config.js',
-      presetEnvConfig: {},
-      shouldImport: false,
-      shouldTimeTravel: false
-    }
-    */
+        options: {
+          tailwindConfig: './tailwind.config.js',
+          presetEnvConfig: {},
+          shouldImport: false,
+          shouldTimeTravel: false
+        }
+      */
     }
   ]
 }
