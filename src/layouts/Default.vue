@@ -18,7 +18,7 @@
       </main>
     </div>
 
-    <footer class="py-5 mt-20 bg-gray-200">
+    <footer class="py-5 bg-gray-200 mt-28">
       <div class="flex justify-between w-4/6 mx-auto">
         <span class="font-semibold">
           Built with <a href="https://gridsome.org/" class="text-green-500 cursor-pointer">Gridsome</a>. 
