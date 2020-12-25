@@ -8,6 +8,15 @@ module.exports = {
   siteName: 'Imrane Chehabi',
   plugins: [
     {
+      use: '@gridsome/vue-remark',
+      options: {
+        typeName: 'Article', // Required
+        baseDir: './content/articles', // Where .md files are located
+        pathPrefix: '/blog', // Add route prefix. Optional
+        template: './src/templates/Article.vue' // Optional
+      }
+    },
+    {
       use: "gridsome-plugin-tailwindcss",
       /**
         * These are the default options.
