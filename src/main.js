@@ -4,6 +4,7 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import BlogLayout from '~/layouts/Blog.vue'
 import AppHeader from "~/components/AppHeader.vue";
+import AppFooter from "~/components/AppFooter.vue";
 
 import "fontsource-nunito-sans/latin-400.css" // Normal
 import "fontsource-nunito-sans/latin-600.css" // Semibold
@@ -16,4 +17,5 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout)
   Vue.component('BlogLayout', BlogLayout)
   Vue.component('AppHeader', AppHeader)
+  Vue.component('AppFooter', AppFooter)
 }
