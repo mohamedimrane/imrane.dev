@@ -10,9 +10,9 @@ module.exports = {
     {
       use: '@gridsome/vue-remark',
       options: {
-        typeName: 'Article', 
-        baseDir: './blog', 
-        pathPrefix: '/blog', 
+        typeName: 'Article',
+        baseDir: './blog',
+        route: '/article/:slug',
         template: './src/templates/Article.vue'
       }
     },
