@@ -11,7 +11,7 @@ module.exports = {
       use: '@gridsome/vue-remark',
       options: {
         typeName: 'Article', // Required
-        baseDir: './content/articles', // Where .md files are located
+        baseDir: './blog', // Where .md files are located
         pathPrefix: '/blog', // Add route prefix. Optional
         template: './src/templates/Article.vue' // Optional
       }
