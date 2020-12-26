@@ -1,5 +1,5 @@
 ---
-title: Make Vscode Awesome
+title: Make Vscode More Awesome
 tags: [vscode, productivity]
 updated_at: December 24, 2020
 ---

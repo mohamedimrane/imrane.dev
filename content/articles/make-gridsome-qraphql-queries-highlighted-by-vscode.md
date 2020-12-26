@@ -1,7 +1,7 @@
 ---
 title: Make Gridsome QraphQL Queries Highlighted by Vscode
 tags: [vscode, productivity, gridsome]
-updated_at: 2020-12-25T22:49:56.564Z
+updated_at: December 24, 2020
 ---
 
 ## Removing useless things
