@@ -1,6 +1,8 @@
 ---
 title: Make Vscode More Awesome
 tags: [vscode, productivity]
+icon:
+    path: /icons/netlify.svg
 updated_at: December 24, 2020
 ---
 

@@ -1,6 +1,9 @@
 ---
 title: Make Gridsome QraphQL Queries Highlighted by Vscode
 tags: [vscode, productivity, gridsome]
+icon:
+    path: /icons/vscode.svg
+    alt: "React JS"
 updated_at: December 24, 2020
 ---
 
