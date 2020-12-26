@@ -1,5 +1,6 @@
 ---
 title: Make Vscode Awesome
+slug: make-vscode-awesome
 tags: [vscode, productivity]
 icon:
     path: /icons/reactjs.svg
