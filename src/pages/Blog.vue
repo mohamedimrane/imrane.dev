@@ -34,11 +34,11 @@ query Article {
           alt
         }
         date (format: "MMMM D, Y")
+        datetime: date
       }
     }
   }
 }
-
 </page-query>
 
 <script>
