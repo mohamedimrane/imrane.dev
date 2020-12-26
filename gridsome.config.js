@@ -10,24 +10,14 @@ module.exports = {
     {
       use: '@gridsome/vue-remark',
       options: {
-        typeName: 'Article', // Required
-        baseDir: './blog', // Where .md files are located
-        pathPrefix: '/blog', // Add route prefix. Optional
-        template: './src/templates/Article.vue' // Optional
+        typeName: 'Article', 
+        baseDir: './blog', 
+        pathPrefix: '/blog', 
+        template: './src/templates/Article.vue'
       }
     },
     {
       use: "gridsome-plugin-tailwindcss",
-      /**
-        * These are the default options.
-
-        options: {
-          tailwindConfig: './tailwind.config.js',
-          presetEnvConfig: {},
-          shouldImport: false,
-          shouldTimeTravel: false
-        }
-      */
     }
   ]
 }
