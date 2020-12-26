@@ -3,7 +3,8 @@ title: Make Vscode More Awesome
 tags: [vscode, productivity]
 icon:
     path: /icons/netlify.svg
-updated_at: December 24, 2020
+    alt: "Netlify"
+date: 2020-12-24
 ---
 
 ## Removing useless things

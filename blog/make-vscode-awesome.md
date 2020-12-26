@@ -2,9 +2,9 @@
 title: Make Vscode Awesome
 tags: [vscode, productivity]
 icon:
-    path: /icons/vscode.svg
+    path: /icons/reactjs.svg
     alt: "React JS"
-updated_at: December 24, 2020
+date: 2020-12-24
 ---
 
 ## Removing useless things

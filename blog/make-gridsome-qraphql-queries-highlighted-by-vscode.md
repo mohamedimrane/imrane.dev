@@ -2,9 +2,9 @@
 title: Make Gridsome QraphQL Queries Highlighted by Vscode
 tags: [vscode, productivity, gridsome]
 icon:
-    path: /icons/vscode.svg
+    path: /icons/reactjs.svg
     alt: "React JS"
-updated_at: December 24, 2020
+date: 2020-12-19
 ---
 
 ## Removing useless things
