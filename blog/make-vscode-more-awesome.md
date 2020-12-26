@@ -1,6 +1,5 @@
 ---
 title: Make Vscode More Awesome
-title: make-vscode-more-awesome
 tags: [vscode, productivity]
 icon:
     path: /icons/netlify.svg
