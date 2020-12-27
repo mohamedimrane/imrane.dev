@@ -3,6 +3,7 @@
 
 import DefaultLayout from '~/layouts/Default.vue'
 import BlogLayout from '~/layouts/Blog.vue'
+import ArticleLayout from '~/layouts/Article.vue'
 import AppHeader from "~/components/AppHeader.vue";
 import AppFooter from "~/components/AppFooter.vue";
 
@@ -16,6 +17,7 @@ export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   Vue.component('BlogLayout', BlogLayout)
+  Vue.component('ArticleLayout', ArticleLayout)
   Vue.component('AppHeader', AppHeader)
   Vue.component('AppFooter', AppFooter)
 }
