@@ -5,7 +5,7 @@ tags: [vscode, productivity]
 icon:
     path: /icons/netlify.svg
     alt: "Netlify"
-date: 2020-12-24
+date: 2020-12-22
 ---
 
 ### Removing useless things

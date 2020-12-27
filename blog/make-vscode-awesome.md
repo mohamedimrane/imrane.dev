@@ -8,10 +8,15 @@ icon:
 date: 2020-12-24
 ---
 
+![Mountain](/images/test.jpeg)
+
 ### Removing useless things
 
-Consequat adipisicing dolore ut adipisicing commodo. Laboris ullamco veniam fugiat est aliquip labore duis minim. Nisi enim pariatur dolore magna enim aliqua.  
-Labore consectetur reprehenderit cillum sunt ipsum tempor aliqua dolore excepteur nisi nisi sit et. Nulla cupidatat sit dolore id cupidatat excepteur reprehenderit ex excepteur laboris tempor. Commodo ex irure anim magna enim incididunt mollit do consequat aute incididunt ad id. Nostrud cupidatat sit ipsum cillum qui veniam elit in minim cillum aliqua adipisicing. Ad reprehenderit non quis officia sit ad exercitation nulla cillum sint laborum adipisicing nostrud aliqua.  
+Consequat adipisicing dolore ut adipisicing commodo. **Laboris ullamco veniam fugiat est aliquip labore duis minim.** *Nisi enim pariatur dolore magna enim aliqua.*  
+
+---
+
+Labore `consectetur` reprehenderit cillum sunt ipsum tempor aliqua dolore excepteur nisi nisi sit et. Nulla cupidatat sit dolore id cupidatat excepteur reprehenderit ex excepteur laboris tempor. Commodo ex irure anim magna enim incididunt mollit do consequat aute incididunt ad id. Nostrud cupidatat sit ipsum cillum qui veniam elit in minim cillum aliqua adipisicing. Ad reprehenderit non quis officia sit ad exercitation nulla cillum sint laborum adipisicing nostrud aliqua.  
 
 ### Adding useful extensions
 
@@ -20,8 +25,28 @@ Incididunt culpa irure dolor qui ut quis pariatur velit velit tempor. Labore des
 - New Moon  
 - Bracketeer
 - Vetur
+  - Test
+  - Test2
 - Live Share
 - Live Server
+
+1. A
+   1. YE 
+2. B 
+3. C
+4. D
+
+| 1     | 2      | 3      | 3   | 4        |
+|-------|--------|--------|-----|----------|
+| bjhb  | jkbjkb | jbjkb  | b,n | b,nb     |
+| ,nb,n | b,n    | b,n    | bn  | b,nb,nbn |
+|       | nb     | ,nb,nb | ,nb | ,nb,     |
+
+> The best view comes after the **hardest climb**
+> > That's true
+> > > Yeah   
+>
+> > Of course
 
 ```javascript
 console.log('Hey')
