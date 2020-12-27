@@ -15,6 +15,7 @@ module.exports = {
         'light-text-100': '#ECF8FF',
         'light-text-200': '#C9E2F0',
         'blue50': '#5E8CA7 ',
+        'blue40': '#416883 ',
       }
     }
   },
