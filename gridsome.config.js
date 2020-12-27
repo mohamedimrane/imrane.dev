@@ -13,7 +13,8 @@ module.exports = {
         typeName: 'Article',
         baseDir: './blog',
         route: '/article/:slug',
-        template: './src/templates/Article.vue'
+        template: './src/templates/Article.vue',
+        plugins: [['gridsome-plugin-remark-shiki', { theme: 'nord', skipInline: true }]],
       }
     },
     {
