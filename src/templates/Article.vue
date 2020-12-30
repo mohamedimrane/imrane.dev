@@ -3,6 +3,9 @@
     <main class="mx-auto mt-32 container-inner">
       <h1 class="text-3xl font-bold">{{ $page.article.title }}</h1>
       <p class="mt-4 text-blue40">Last update on <time :datetime="$page.article.datetime">{{ $page.article.date }}</time></p>
+      <ul class="mt-2">
+        <g-link tag="li" class="inline-block px-3 py-1 mr-3 text-sm bg-gray-400 bg-opacity-25 rounded hover:bg-opacity-40" v-for="tag in $page.article.tags" :key="tag.id" :to="tag.path">{{ stringCapitalize(tag.title) }}</g-link>
+      </ul>
       <div class="mt-8 markdown-body">
         <VueRemarkContent class="leading-9 tracking-wide" />
       </div>
@@ -15,8 +18,24 @@ query Article ($path: String!) {
   article: article (path: $path) {
     title
     path
+    tags {
+      id
+      title
+      path
+    }
     date (format: "MMMM DD, Y")
     datetime: date
   }
 }
 </page-query>
+
+<script>
+export default {
+  methods: {
+    stringCapitalize (str) {
+      if (typeof str !== 'string') return ''
+      return str[0].toUpperCase() + str.slice(1)
+    }
+  }
+};
+</script>
