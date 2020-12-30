@@ -6,6 +6,9 @@
 
 module.exports = {
   siteName: 'Imrane Chehabi',
+  templates: {
+    Tag: '/tag/:title',
+  },
   plugins: [
     {
       use: '@gridsome/vue-remark',
@@ -14,6 +17,12 @@ module.exports = {
         baseDir: './blog',
         route: '/article/:slug',
         template: './src/templates/Article.vue',
+        refs: {
+          tags: {
+            typeName: 'Tag',
+            create: true
+          }
+        },
         plugins: [['gridsome-plugin-remark-shiki', { theme: 'nord', skipInline: true }]],
       }
     },
