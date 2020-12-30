@@ -22,7 +22,7 @@
 </template>
 
 <page-query>
-query Articles {
+query Article {
   articles: allArticle {
     edges {
       node {
