@@ -42,7 +42,7 @@ query Article {
 </page-query>
 
 <script>
-import ArticleSnippet from "~/components/ArticleSnippet.vue";
+import ArticleSnippet from "~/components/ArticleSnippet.vue"
 
 export default {
   components: {
