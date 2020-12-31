@@ -4,9 +4,9 @@
 
     <nav class="w-3/12 mt-auto">
       <ul class="flex justify-between">
-        <li class="font-bold uppercase cursor-pointer text-natural-black">ABOUT</li>
-        <li class="font-bold uppercase cursor-pointer text-natural-black">SKILLS</li>
-        <li class="font-bold uppercase cursor-pointer text-natural-black">BLOG</li>
+        <g-link to="/" tag="li" class="font-bold uppercase cursor-pointer text-natural-black">ABOUT</g-link>
+        <g-link to="/#skills" class="font-bold uppercase cursor-pointer text-natural-black">SKILLS</g-link>
+        <g-link to="/blog" tag="li" class="font-bold uppercase cursor-pointer text-natural-black">BLOG</g-link>
       </ul>
     </nav>
   </header>
