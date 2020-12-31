@@ -1,6 +1,6 @@
 <template>
   <TagLayout>
-    <h2 class="text-4xl font-bold text-natural-black">Tag: {{ stringCapitalize($page.tag.title) }}</h2>
+    <h2 class="text-4xl font-bold text-natural-black">Tag: {{ $page.tag.title }}</h2>
     <section id="articles" class="w-full mt-10">
       <ArticleSnippet v-for="edge in $page.tag.belongsTo.edges" :key="edge.title" :article="edge.node" />
     </section>
@@ -36,12 +36,6 @@ query Tag ($id: ID!) {
 import ArticleSnippet from "~/components/ArticleSnippet.vue"
 
 export default {
-  methods: {
-    stringCapitalize (str) {
-      if (typeof str !== 'string') return ''
-      return str[0].toUpperCase() + str.slice(1)
-    }
-  },
   components: {
     ArticleSnippet
   }
