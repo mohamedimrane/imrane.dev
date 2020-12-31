@@ -47,6 +47,9 @@ import ArticleSnippet from "~/components/ArticleSnippet.vue";
 export default {
   components: {
     ArticleSnippet
+  },
+  metaInfo: {
+    title: "Blog"
   }
 };
 </script>
