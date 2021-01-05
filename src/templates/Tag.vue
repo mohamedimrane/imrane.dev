@@ -44,6 +44,11 @@ export default {
   },
   components: {
     ArticleSnippet
+  },
+  metaInfo () {
+    return {
+      title: 'Tag: ' + this.stringCapitalize(this.$page.tag.title),
+    }
   }
 };
 </script>
