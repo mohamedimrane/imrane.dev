@@ -36,6 +36,11 @@ export default {
       if (typeof str !== 'string') return ''
       return str[0].toUpperCase() + str.slice(1)
     }
+  },
+  metaInfo () {
+    return {
+      title: this.$page.article.title
+    }
   }
 };
 </script>
