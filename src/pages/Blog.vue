@@ -49,7 +49,23 @@ export default {
     ArticleSnippet
   },
   metaInfo: {
-    title: "Blog"
+    title: "Blog",
+    meta: [
+      {
+        key: 'title',
+        name: 'title',
+        content: 'Blog | Mohamed Imrane Chehabi'
+      },
+      {
+        key: 'description',
+        name: 'description',
+        content: ''
+      },
+      {
+        name: 'author',
+        content: ''
+      }
+    ]
   }
 };
 </script>
