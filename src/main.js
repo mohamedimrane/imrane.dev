@@ -26,10 +26,12 @@ export default function (Vue, { router, head, isClient }) {
   // Add meta tags
   head.meta.push(...[
     {
+      key: 'title',
       name: 'title',
       content: 'Mohamed Imrane Chehabi'
     },
     {
+      key: 'description',
       name: 'description',
       content: 'Web Designer and Fullstack Developer'
     },
