@@ -77,12 +77,12 @@ export default {
         },
         {
           key: 'twitter:description',
-          property: 'twitter:description',
+          name: 'twitter:description',
           content: ''
         },
         {
           key: 'twitter:url',
-          property: 'twitter:url',
+          name: 'twitter:url',
           content: 'https://www.imrane.dev' + this.$page.article.path
         }
       ]
