@@ -40,6 +40,10 @@ export default function (Vue, { router, head, isClient }) {
     {
       name: 'og:title',
       content: 'Mohamed Imrane Chehabi'
+    },
+    {
+      name: 'og:description',
+      content: 'Web Designer and Fullstack Developer'
     }
   ])
 }
