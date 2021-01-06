@@ -34,4 +34,12 @@ export default function (Vue, { router, head, isClient }) {
       content: 'Web Designer and Fullstack Developer'
     }
   ])
+
+  // Add og / facebook meta tags
+  head.meta.push(...[
+    {
+      name: 'og:title',
+      content: 'Mohamed Imrane Chehabi'
+    }
+  ])
 }
