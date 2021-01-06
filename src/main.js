@@ -44,6 +44,10 @@ export default function (Vue, { router, head, isClient }) {
     {
       name: 'og:description',
       content: 'Web Designer and Fullstack Developer'
+    },
+    {
+      name: 'og:url',
+      content: 'https://www.imrane.dev'
     }
   ])
 }
