@@ -32,6 +32,10 @@ export default function (Vue, { router, head, isClient }) {
     {
       name: 'description',
       content: 'Web Designer and Fullstack Developer'
+    },
+    {
+      name: 'theme-color',
+      content: "#2397B0"
     }
   ])
 
