@@ -64,6 +64,10 @@ export default function (Vue, { router, head, isClient }) {
     {
       name: 'twitter:description',
       content: 'Web Designer and Fullstack Developer'
+    }, 
+    {
+      name: 'twitter:url',
+      content: 'https://www.imrane.dev'
     }
   ])
 }
