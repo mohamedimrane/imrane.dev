@@ -28,6 +28,10 @@ export default function (Vue, { router, head, isClient }) {
     {
       name: 'title',
       content: 'Mohamed Imrane Chehabi'
+    },
+    {
+      name: 'description',
+      content: 'Web Designer and Fullstack Developer'
     }
   ])
 }
