@@ -54,6 +54,7 @@ export default function (Vue, { router, head, isClient }) {
       content: 'Web Designer and Fullstack Developer'
     },
     {
+      key: 'og:url',
       property: 'og:url',
       content: 'https://www.imrane.dev'
     },
@@ -66,14 +67,17 @@ export default function (Vue, { router, head, isClient }) {
   // Add twitter meta tags
   head.meta.push(...[
     {
+      key: 'twitter:title',
       name: 'twitter:title',
       content: 'Mohamed Imrane Chehabi'
     },
     {
+      key: 'twitter:description',
       name: 'twitter:description',
       content: 'Web Designer and Fullstack Developer'
     }, 
     {
+      key: 'twitter:url',
       name: 'twitter:url',
       content: 'https://www.imrane.dev'
     },
