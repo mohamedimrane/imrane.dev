@@ -26,5 +26,27 @@ module.exports = {
     padding: ['responsive', 'hover'],
     borderColor: ['responsive', 'hover', 'focus'],
   },
+  purge: {
+    content: [
+      './src/**/*.vue',
+      './src/**/*.js',
+      './src/**/*.html',
+      './src/**/*.md',
+      './docs/**/*.md',
+      './blog/**/*.md',
+    ],
+    options: {
+      whitelist: [
+        'body',
+        'html',
+        'img',
+        'a',
+        'g-image',
+        'g-image--lazy',
+        'g-image--loaded',
+        'active',
+      ],
+    },
+  },
   plugins: [],
 }
