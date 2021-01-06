@@ -22,4 +22,12 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('TagLayout', TagLayout)
   Vue.component('AppHeader', AppHeader)
   Vue.component('AppFooter', AppFooter)
+
+  // Add meta tags
+  head.meta.push(...[
+    {
+      name: 'title',
+      content: 'Mohamed Imrane Chehabi'
+    }
+  ])
 }
