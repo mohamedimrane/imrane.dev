@@ -68,6 +68,10 @@ export default function (Vue, { router, head, isClient }) {
     {
       name: 'twitter:url',
       content: 'https://www.imrane.dev'
+    },
+    {
+      name: 'twitter:card',
+      content: 'summary'
     }
   ])
 }
