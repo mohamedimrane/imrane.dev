@@ -54,4 +54,12 @@ export default function (Vue, { router, head, isClient }) {
       content: 'website'
     }
   ])
+
+  // Add twitter meta tags
+  head.meta.push(...[
+    {
+      name: 'twitter:title',
+      content: 'Mohamed Imrane Chehabi'
+    }
+  ])
 }
