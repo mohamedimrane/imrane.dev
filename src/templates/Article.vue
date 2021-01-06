@@ -39,7 +39,53 @@ export default {
   },
   metaInfo () {
     return {
-      title: this.$page.article.title
+      title: this.$page.article.title,
+      meta: [
+        {
+          key: 'title',
+          name: 'title',
+          content: this.$page.article.title + ' | Mohamed Imrane Chehabi'
+        },
+        {
+          key: 'description',
+          name: 'description',
+          content: ''
+        },
+        {
+          name: 'author',
+          content: 'Mohamed Imrane Chehabi'
+        },
+        {
+          key: 'og:title',
+          property: 'og:title',
+          content: this.$page.article.title + ' | Mohamed Imrane Chehabi'
+        },
+        {
+          key: 'og:description',
+          property: 'og:description',
+          content: ''
+        },
+        {
+          key: 'og:url',
+          property: 'og:url',
+          content: 'https://www.imrane.dev' + this.$page.article.path
+        },
+        {
+          key: 'twitter:title',
+          name: 'twitter:title',
+          content: this.$page.article.title + ' | Mohamed Imrane Chehabi'
+        },
+        {
+          key: 'twitter:description',
+          property: 'twitter:description',
+          content: ''
+        },
+        {
+          key: 'twitter:url',
+          property: 'twitter:url',
+          content: 'https://www.imrane.dev' + this.$page.article.path
+        }
+      ]
     }
   }
 };
