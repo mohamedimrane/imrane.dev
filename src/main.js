@@ -48,6 +48,10 @@ export default function (Vue, { router, head, isClient }) {
     {
       name: 'og:url',
       content: 'https://www.imrane.dev'
+    },
+    {
+      name: 'og:type',
+      content: 'website'
     }
   ])
 }
