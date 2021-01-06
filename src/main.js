@@ -15,7 +15,7 @@ import "fontsource-nunito-sans/latin-800.css" // Extrabold
 import "fontsource-fredoka-one";
 
 export default function (Vue, { router, head, isClient }) {
-  // Set default layout as a global component
+  // Register layouts
   Vue.component('Layout', DefaultLayout)
   Vue.component('BlogLayout', BlogLayout)
   Vue.component('ArticleLayout', ArticleLayout)
