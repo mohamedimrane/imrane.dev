@@ -60,6 +60,10 @@ export default function (Vue, { router, head, isClient }) {
     {
       name: 'twitter:title',
       content: 'Mohamed Imrane Chehabi'
+    },
+    {
+      name: 'twitter:description',
+      content: 'Web Designer and Fullstack Developer'
     }
   ])
 }
