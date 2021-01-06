@@ -72,6 +72,10 @@ export default function (Vue, { router, head, isClient }) {
     {
       name: 'twitter:card',
       content: 'summary'
+    },
+    {
+      name: 'twitter:image',
+      content: 'https://www.imrane.dev/assets/static/src/assets/illustrations/web-developer.svg?width=344&key=6122171'
     }
   ])
 }
