@@ -2,11 +2,11 @@
   <Layout>
     <section id="about-me" class="flex justify-between">
       <div>
-        <h1 class="text-5xl text-natural-black font-fredoka-one">Imrane Chehabi</h1>
-        <h2 class="mt-2 text-2xl font-bold text-gray-400">Web Designer and Fullstack Developer</h2>
-        <p class="mt-6 leading-loose text-natural-black">Hey! I'am Mohamed Imrane Chehabi, a 12 years old programmer who works with modern technologies like Laravel, October CMS, Vue.js, Nuxt.js, Gridsome and Tailwind CSS. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos earum quasi, corporis eos consequuntur molestias reprehenderit exercitationem quod tempora tempore.</p>
+        <h1 class="text-3xl md:text-5xl text-natural-black font-fredoka-one">Imrane Chehabi</h1>
+        <h2 class="mt-2 text-lg font-bold text-gray-400 md:text-2xl">Web Designer and Fullstack Developer</h2>
+        <p class="mt-2 leading-loose md:mt-6 text-natural-black">Hey! I'am Mohamed Imrane Chehabi, a 12 years old programmer who works with modern technologies like Laravel, October CMS, Vue.js, Nuxt.js, Gridsome and Tailwind CSS. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos earum quasi, corporis eos consequuntur molestias reprehenderit exercitationem quod tempora tempore.</p>
       </div>
-      <g-image class="ml-10" src="~/assets/illustrations/web-developer.svg" alt="" />
+      <g-image class="hidden ml-10 md:block" src="~/assets/illustrations/web-developer.svg" alt="" />
     </section>
 
     <section id="skills" class="mt-28">
