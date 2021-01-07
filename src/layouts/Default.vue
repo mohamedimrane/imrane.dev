@@ -3,7 +3,7 @@
     <div>
       <AppHeader />
   
-      <main class="w-6/12 mx-auto mt-32">
+      <main class="w-11/12 mx-auto mt-16 md:w-6/12 md:mt-32">
         <slot />
       </main>
     </div>
