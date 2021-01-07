@@ -9,15 +9,15 @@
       <g-image class="hidden ml-10 md:block" src="~/assets/illustrations/web-developer.svg" alt="" />
     </section>
 
-    <section id="skills" class="mt-28">
-      <h2 class="text-4xl font-bold text-center text-natural-black">Skills and Knowledge</h2>
-      <div class="grid grid-cols-3 mx-auto mt-10 place-items-center gap-y-10">
-        <g-image class="w-20" src="~/assets/logos/laravel.svg" alt="Laravel" />
-        <g-image class="w-20" src="~/assets/logos/vuejs.svg" alt="Vue.js" />
-        <g-image class="w-20" src="~/assets/logos/octobercms.svg" alt="October CMS" />
-        <g-image class="w-20" src="~/assets/logos/nuxtjs.svg" alt="Nuxt JS" />
-        <g-image class="w-20" src="~/assets/logos/tailwindcss.svg" alt="Tailwind CSS" />
-        <g-image class="w-20" src="~/assets/logos/gridsome.svg" alt="Gridsome" />
+    <section id="skills" class="mt-12 md:mt-28">
+      <h2 class="text-2xl font-bold text-center md:text-4xl text-natural-black">Skills and Knowledge</h2>
+      <div class="grid grid-cols-2 mx-auto md:grid-cols-3 mt-7 place-items-center gap-y-10">
+        <g-image class="w-11 md:w-20" src="~/assets/logos/laravel.svg" alt="Laravel" />
+        <g-image class="w-11 md:w-20" src="~/assets/logos/vuejs.svg" alt="Vue.js" />
+        <g-image class="w-11 md:w-20" src="~/assets/logos/octobercms.svg" alt="October CMS" />
+        <g-image class="w-11 md:w-20" src="~/assets/logos/nuxtjs.svg" alt="Nuxt JS" />
+        <g-image class="w-11 md:w-20" src="~/assets/logos/tailwindcss.svg" alt="Tailwind CSS" />
+        <g-image class="w-11 md:w-20" src="~/assets/logos/gridsome.svg" alt="Gridsome" />
       </div>
     </section>
 
