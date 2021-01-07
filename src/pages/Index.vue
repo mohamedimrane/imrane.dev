@@ -21,23 +21,23 @@
       </div>
     </section>
 
-    <section id="contact-me" class="mt-28">
-      <h2 class="text-4xl font-bold text-center text-natural-black">Contact Me</h2>
-      <h3 class="mt-10 text-2xl text-natural-black">Looking to start a project?</h3>
-      <h4 class="mt-2 text-lg text-gray-400">Use the form below</h4>
-      <div class="grid grid-cols-2">
+    <section id="contact-me" class="mt-12 md:mt-28">
+      <h2 class="text-2xl font-bold text-center md:text-4xl text-natural-black">Contact Me</h2>
+      <h3 class="mt-1 text-lg md:mt-10 md:text-2xl text-natural-black">Looking to start a project?</h3>
+      <h4 class="text-gray-400 md:mt-2 md:text-lg">Use the form below</h4>
+      <div class="md:grid md:grid-cols-2">
         <form @click.prevent="" class="mt-5">
-          <div class="grid grid-cols-2 gap-x-4">
-            <input type="text" name="full_name" id="full_name" placeholder="Full Name" class="p-2 text-gray-800 border border-gray-400 rounded-md shadow focus:outline-none focus:ring-2 placeholder-opacity-40">
-            <input type="email" name="email" id="email" placeholder="Email" class="p-2 text-gray-800 border border-gray-400 rounded-md shadow focus:outline-none focus:ring-2 placeholder-opacity-40">
+          <div class="md:grid md:grid-cols-2 md:gap-x-4">
+            <input type="text" name="full_name" id="full_name" placeholder="Full Name" class="w-full p-2 text-gray-800 border border-gray-400 rounded-md shadow focus:outline-none focus:ring-2 placeholder-opacity-40">
+            <input type="email" name="email" id="email" placeholder="Email" class="w-full p-2 mt-3 text-gray-800 border border-gray-400 rounded-md shadow md:mt-0 focus:outline-none focus:ring-2 placeholder-opacity-40">
           </div>
-          <input type="text" name="subject" id="subject" placeholder="Subject" class="w-full p-2 mt-6 text-gray-800 border border-gray-400 rounded-md shadow focus:outline-none focus:ring-2 placeholder-opacity-40">
-          <textarea name="message" id="message" placeholder="Message" class="w-full h-40 p-2 mt-6 text-gray-800 border border-gray-400 rounded-md shadow focus:outline-none focus:ring-2 placeholder-opacity-40"></textarea>
+          <input type="text" name="subject" id="subject" placeholder="Subject" class="w-full p-2 mt-3 text-gray-800 border border-gray-400 rounded-md shadow md:mt-6 focus:outline-none focus:ring-2 placeholder-opacity-40">
+          <textarea name="message" id="message" placeholder="Message" class="w-full h-40 p-2 mt-3 text-gray-800 border border-gray-400 rounded-md shadow md:mt-6 focus:outline-none focus:ring-2 placeholder-opacity-40"></textarea>
           <button type="submit" class="flex justify-between px-6 py-2 mx-auto mt-4 text-white transition-colors duration-200 ease-in-out rounded-full focus:outline-none bg-teal hover:bg-dark-teal focus:ring-2 focus:ring-dark-teal">
             <g-image class="mt-0.5" src="~/assets/icons/send.svg"/> <span class="ml-3">Send Message</span>
           </button>
         </form>
-        <g-image class="my-auto" src="~/assets/illustrations/paper-plane.svg" alt="" />
+        <g-image class="hidden my-auto md:block" src="~/assets/illustrations/paper-plane.svg" alt="" />
       </div>
     </section>
   </Layout>
