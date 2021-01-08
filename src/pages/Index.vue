@@ -10,7 +10,7 @@
     </section>
 
     <section id="skills" class="mt-12 md:mt-28">
-      <h2 class="text-2xl font-bold text-center md:text-4xl text-natural-black">Skills and Knowledge</h2>
+      <h2 class="text-2xl font-bold text-center md:text-4xl text-natural-black">Skills and Tools</h2>
       <div class="grid grid-cols-2 mx-auto md:grid-cols-3 mt-7 place-items-center gap-y-10">
         <g-image class="w-11 md:w-20" src="~/assets/logos/laravel.svg" alt="Laravel" />
         <g-image class="w-11 md:w-20" src="~/assets/logos/vuejs.svg" alt="Vue.js" />
