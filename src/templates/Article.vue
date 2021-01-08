@@ -1,8 +1,8 @@
 <template>
   <ArticleLayout>
-    <main class="mx-auto mt-32 container-inner">
-      <h1 class="text-3xl font-bold">{{ $page.article.title }}</h1>
-      <p class="mt-4 text-blue40">Last update on <time :datetime="$page.article.datetime">{{ $page.article.date }}</time></p>
+    <main class="mx-auto mt-16 md:mt-32 container-inner">
+      <h1 class="text-2xl font-bold md:text-3xl">{{ $page.article.title }}</h1>
+      <p class="mt-2 text-sm md:mt-4 md:text-base text-blue40">Last update on <time :datetime="$page.article.datetime">{{ $page.article.date }}</time></p>
       <ul class="mt-2">
         <g-link tag="li" class="inline-block px-3 py-1 mr-3 text-sm bg-gray-400 bg-opacity-25 rounded hover:bg-opacity-40" v-for="tag in $page.article.tags" :key="tag.id" :to="tag.path">{{ stringCapitalize(tag.title) }}</g-link>
       </ul>
