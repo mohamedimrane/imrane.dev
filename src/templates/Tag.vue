@@ -1,7 +1,7 @@
 <template>
   <TagLayout>
-    <h2 class="text-4xl font-bold text-natural-black">Tag: {{ stringCapitalize($page.tag.title) }}</h2>
-    <section id="articles" class="w-full mt-10">
+    <h2 class="text-3xl font-bold md:text-4xl text-natural-black">Tag: {{ stringCapitalize($page.tag.title) }}</h2>
+    <section id="articles" class="w-full mt-6 md:mt-10">
       <ArticleSnippet v-for="edge in $page.tag.belongsTo.edges" :key="edge.title" :article="edge.node" />
     </section>
   </TagLayout>
