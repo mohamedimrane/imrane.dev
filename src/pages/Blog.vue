@@ -1,7 +1,7 @@
 <template>
   <BlogLayout>
-    <h2 class="text-4xl font-bold text-natural-black">Articles</h2>
-    <div class="flex flex-col justify-between mt-10 md:flex-row">
+    <h2 class="text-3xl font-bold md:text-4xl text-natural-black">Articles</h2>
+    <div class="flex flex-col justify-between mt-6 md:mt-10 md:flex-row">
       <div class="relative w-full mr-8 md:w-1/3">
         <input type="text" id="search-bar" placeholder="Search" class="w-full h-10 pl-10 pr-3 text-lg border border-opacity-50 rounded focus:outline-none focus:ring-1 placeholder-blue50 border-light-text-200 text-natural-black">
         <div class="absolute stroke-current left-2 top-1.5 text-blue50">
