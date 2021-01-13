@@ -946,4 +946,13 @@
   padding-left: 128px !important;
 }
 
+.dark .markdown-body * {
+  color: white;
+}
+
+.dark .markdown-body table * {
+   border-color: #c7c8c9;
+   background: #0B2D36;
+}
+
 /* purgecss end ignore */
