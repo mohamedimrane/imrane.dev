@@ -1,9 +1,9 @@
 <template>
   <BlogLayout>
-    <h2 class="text-3xl font-bold lg:text-4xl text-natural-black">Articles</h2>
+    <h2 class="text-3xl font-bold lg:text-4xl text-natural-black dark:text-white">Articles</h2>
     <div class="flex flex-col justify-between mt-6 lg:mt-10 lg:flex-row">
       <div class="relative w-full mr-8 lg:w-1/3">
-        <input type="text" id="search-bar" placeholder="Search" class="w-full h-10 pl-10 pr-3 text-lg border border-opacity-50 rounded focus:outline-none focus:ring-1 placeholder-blue50 border-light-text-200 text-natural-black">
+        <input type="text" id="search-bar" placeholder="Search" class="w-full h-10 pl-10 pr-3 text-lg border border-opacity-50 rounded dark:text-white dark:bg-darkmode-dark-teal focus:outline-none focus:ring-1 placeholder-blue50 border-light-text-200 text-natural-black">
         <div class="absolute stroke-current left-2 top-1.5 text-blue50">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round"
