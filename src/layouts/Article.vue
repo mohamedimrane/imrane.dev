@@ -1,14 +1,31 @@
 <template>
-  <div class="flex flex-col justify-between min-h-screen font-nunito-sans">
-    <div>
-      <AppHeader />
+  <div :class="{ 'dark': theme === 'dark' }">
+    <div class="flex flex-col justify-between min-h-screen font-nunito-sans">
+      <div>
+        <AppHeader @themeSwitched="switchTheme" :theme="theme"/>
+    
+        <slot />
+      </div>
   
-      <slot />
+      <AppFooter />
     </div>
-
-    <AppFooter />
   </div>
 </template>
+
+<script>
+export default {
+  data () {
+    return { 
+      theme: 'light'
+    }
+  },
+  methods: {
+    switchTheme (theme) {
+      this.theme = theme
+    }
+  }
+};
+</script>
 
 <style src="../github-markdown.css" />
 <style>
