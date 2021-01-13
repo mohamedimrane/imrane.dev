@@ -7,11 +7,34 @@
         <g-link to="/" tag="li" class="font-bold uppercase cursor-pointer text-natural-black">ABOUT</g-link>
         <g-link to="/#skills" class="font-bold uppercase cursor-pointer ml-7 md:ml-20 lg:ml-0 text-natural-black">SKILLS</g-link>
         <g-link to="/blog" tag="li" class="font-bold uppercase cursor-pointer ml-7 md:ml-20 lg:ml-0 text-natural-black">BLOG</g-link>
-        <li class="cursor-pointer ml-7 md:ml-20 lg:ml-0"><input id="toggle" class="toggle" type="checkbox" checked></li>
+				<li class="cursor-pointer ml-7 md:ml-20 lg:ml-0"><input id="toggle" @click="switchTheme" class="toggle" type="checkbox" :checked="theme === 'light'"></li>
       </ul>
     </nav>
   </header>
 </template>
+
+<script>
+export default {
+  props: {
+    themeProp: String
+  },
+  data () {
+    return {
+      theme: ''
+    }
+  },
+  mounted () {
+    this.theme = this.themeProp ? this.themeProp : 'light'
+  },
+  methods: {
+    switchTheme () {
+      this.theme = this.theme === 'light' ? 'dark' : 'light'
+
+      this.$emit('themeSwitched', this.theme)
+    }
+  }
+};
+</script>
 
 <style>
 .toggle {
