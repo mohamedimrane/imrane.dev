@@ -16,6 +16,8 @@ module.exports = {
         'light-text-200': '#C9E2F0',
         'blue50': '#5E8CA7 ',
         'blue40': '#416883 ',
+        'darkmode-teal': '#1B4751',
+        'darkmode-dark-teal': '#092D36'
       }
     }
   },
