@@ -1,6 +1,6 @@
 <template>
   <TagLayout>
-    <h2 class="text-3xl font-bold lg:text-4xl text-natural-black">Tag: {{ stringCapitalize($page.tag.title) }}</h2>
+    <h2 class="text-3xl font-bold lg:text-4xl text-natural-black dark:text-white">Tag: {{ stringCapitalize($page.tag.title) }}</h2>
     <section id="articles" class="w-full mt-6 lg:mt-10">
       <ArticleSnippet v-for="edge in $page.tag.belongsTo.edges" :key="edge.title" :article="edge.node" />
     </section>
