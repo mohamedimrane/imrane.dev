@@ -13,7 +13,6 @@
     "fontsource-fredoka-one": "^3.1.5",
     "fontsource-nunito-sans": "^3.1.5",
     "gridsome": "^0.7.0",
-    "gridsome-plugin-flexsearch": "^1.0.5",
     "gridsome-plugin-remark-shiki": "^0.6.0",
     "postcss": "^7.0.35",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
