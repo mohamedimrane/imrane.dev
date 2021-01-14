@@ -1,6 +1,7 @@
 ---
 title: Make Vscode More Awesome
 slug: make-vscode-more-awesome
+summary: Lorem Ipsum Dolore Sit Amet
 tags: [vscode, productivity]
 icon:
     path: /icons/netlify.svg

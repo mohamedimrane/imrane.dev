@@ -1,6 +1,7 @@
 ---
 title: Make Gridsome QraphQL Queries Highlighted by Vscode
 slug: make-gridsome-qraphql-queries-highlighted-by-vscode
+summary: Lorem Ipsum Dolore Sit Amet
 tags: [vscode, productivity, gridsome]
 icon:
     path: /icons/reactjs.svg
