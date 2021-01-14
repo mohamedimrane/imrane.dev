@@ -2,7 +2,7 @@
   <div :class="{ 'dark': theme === 'dark' }">
     <div class="flex flex-col justify-between min-h-screen font-nunito-sans dark:bg-darkmode-teal">
       <div>
-        <AppHeader @themeSwitched="switchTheme" :theme="theme"/>
+        <AppHeader @themeSwitched="switchTheme" />
     
         <slot />
       </div>
@@ -19,9 +19,15 @@ export default {
       theme: 'light'
     }
   },
+  mounted () {
+    this.theme = localStorage.getItem('theme')
+  },
+  updated () {
+    this.theme = localStorage.getItem('theme')
+  },
   methods: {
-    switchTheme (theme) {
-      this.theme = theme
+    switchTheme () {
+      this.theme = localStorage.getItem('theme')
     }
   }
 };
