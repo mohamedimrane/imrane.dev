@@ -19,6 +19,13 @@ export default {
       theme: 'light'
     }
   },
+  created () {
+    if (typeof window !== 'undefined') {
+      if (!window.localStorage.getItem('theme')) {
+        window.localStorage.setItem('theme', 'light')
+      }
+    }
+  },
   mounted () {
     if (typeof window !== `undefined`) {
       this.theme = window.localStorage.getItem('theme')
