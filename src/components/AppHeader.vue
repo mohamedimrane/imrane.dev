@@ -15,18 +15,24 @@
 
 <script>
 export default {
-  data () {
-    return {
-      theme: localStorage.getItem('theme')
+  computed: {
+    theme () {
+      if (typeof window !== `undefined`) {
+        return window.localStorage.getItem('theme')
+      }
     }
   },
   updated () {
-    this.theme = localStorage.getItem('theme')
+    if (typeof window !== `undefined`) {
+      this.theme = window.localStorage.getItem('theme')
+    }
   },
   methods: {
     switchTheme () {
-      localStorage.setItem('theme', localStorage.getItem('theme') === 'light' ? 'dark' : 'light')
-      this.$emit('themeSwitched')
+      if (typeof window !== `undefined`) {
+        window.localStorage.setItem('theme', window.localStorage.getItem('theme') === 'light' ? 'dark' : 'light')
+        this.$emit('themeSwitched')
+      }
     }
   },
 };
@@ -45,8 +51,7 @@ export default {
    color: #e6e6ff;
    transition: all 500ms;
 }
-
-.toggle:checked {
+ .toggle:checked {
    --ray-size: calc(var(--size) * -0.4);
    --offset-orthogonal: calc(var(--size) * 0.65);
    --offset-diagonal: calc(var(--size) * 0.45);
@@ -55,15 +60,13 @@ export default {
    box-shadow: inset 0 0 0 var(--size), calc(var(--offset-orthogonal) * -1) 0 0 var(--ray-size), var(--offset-orthogonal) 0 0 var(--ray-size), 0 calc(var(--offset-orthogonal) * -1) 0 var(--ray-size), 0 var(--offset-orthogonal) 0 var(--ray-size), calc(var(--offset-diagonal) * -1) calc(var(--offset-diagonal) * -1) 0 var(--ray-size), var(--offset-diagonal) var(--offset-diagonal) 0 var(--ray-size), calc(var(--offset-diagonal) * -1) var(--offset-diagonal) 0 var(--ray-size), var(--offset-diagonal) calc(var(--offset-diagonal) * -1) 0 var(--ray-size);
 }
 
-.toggle {
+ .toggle {
    z-index: 1;
 }
-
-.toggle:checked ~ .background {
+ .toggle:checked ~ .background {
    --bg: white;
 }
-
-.toggle:checked ~ .title {
+ .toggle:checked ~ .title {
    --color: #fa0;
 }
 </style>
