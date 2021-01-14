@@ -27,6 +27,19 @@ module.exports = {
       }
     },
     {
+      use: 'gridsome-plugin-flexsearch',
+      options: {
+        searchFields: ['title', 'tags'],
+        collections: [
+          {
+            typeName: 'Article',
+            indexName: 'Article',
+            fields: ['id', 'title', 'path', 'summary']
+          }
+        ]
+      }
+    },
+    {
       use: "gridsome-plugin-tailwindcss",
       /**
       * These are the default options.
