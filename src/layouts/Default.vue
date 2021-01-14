@@ -22,14 +22,14 @@ export default {
     }
   },
   mounted () {
-    this.theme = localStorage.getItem('theme')
+    this.theme = window.localStorage.getItem('theme')
   },
   updated () {
-    this.theme = localStorage.getItem('theme')
+    this.theme = window.localStorage.getItem('theme')
   },
   methods: {
     switchTheme () {
-      this.theme = localStorage.getItem('theme')
+      this.theme = window.localStorage.getItem('theme')
     }
   }
 };
