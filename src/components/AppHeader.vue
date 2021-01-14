@@ -17,15 +17,15 @@
 export default {
   data () {
     return {
-      theme: window.localStorage.getItem('theme')
+      theme: localStorage.getItem('theme')
     }
   },
   updated () {
-    this.theme = window.localStorage.getItem('theme')
+    this.theme = localStorage.getItem('theme')
   },
   methods: {
     switchTheme () {
-      window.localStorage.setItem('theme', window.localStorage.getItem('theme') === 'light' ? 'dark' : 'light')
+      localStorage.setItem('theme', localStorage.getItem('theme') === 'light' ? 'dark' : 'light')
       this.$emit('themeSwitched')
     }
   },

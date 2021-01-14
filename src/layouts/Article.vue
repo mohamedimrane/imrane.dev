@@ -20,14 +20,14 @@ export default {
     }
   },
   mounted () {
-    this.theme = window.localStorage.getItem('theme')
+    this.theme = localStorage.getItem('theme')
   },
   updated () {
-    this.theme = window.localStorage.getItem('theme')
+    this.theme = localStorage.getItem('theme')
   },
   methods: {
     switchTheme () {
-      this.theme = window.localStorage.getItem('theme')
+      this.theme = localStorage.getItem('theme')
     }
   }
 };
