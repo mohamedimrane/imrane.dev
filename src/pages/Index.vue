@@ -26,7 +26,7 @@
       <h3 class="mt-1 text-lg md:mt-10 md:text-xl lg:text-2xl text-natural-black dark:text-white">Looking to start a project?</h3>
       <h4 class="text-gray-400 lg:mt-2 lg:text-lg">Use the form below</h4>
       <div class="lg:grid lg:grid-cols-2">
-        <form class="mt-5" netlify name="contact">
+        <form @click.prevent="" class="mt-5" netlify name="contact">
           <div class="lg:grid lg:grid-cols-2 lg:gap-x-4">
             <input type="text" name="full_name" id="full_name" placeholder="Full Name" class="w-full p-2 text-gray-800 border border-gray-400 rounded-md shadow dark:text-white focus:outline-none focus:ring-2 placeholder-opacity-40 dark:bg-darkmode-dark-teal">
             <input type="email" name="email" id="email" placeholder="Email" class="w-full p-2 mt-3 text-gray-800 border border-gray-400 rounded-md shadow dark:text-white md:mt-6 lg:mt-0 focus:outline-none focus:ring-2 placeholder-opacity-40 dark:bg-darkmode-dark-teal">
