@@ -1,6 +1,6 @@
 <template>
   <div :class="{ 'dark': theme === 'dark' }">
-    <div class="flex flex-col justify-between min-h-screen font-nunito-sans dark:bg-darkmode-teal">
+    <div class="flex flex-col justify-between min-h-screen transition-colors ease-in-out font-nunito-sans duration-70 dark:bg-darkmode-teal">
       <div>
         <AppHeader @themeSwitched="switchTheme" />
     
