@@ -4,9 +4,9 @@
 
     <nav class="mx-auto mt-9 lg:mt-auto lg:mx-0 lg:w-3/12">
       <ul class="flex justify-between">
-        <g-link to="/" tag="li" class="font-bold uppercase cursor-pointer text-natural-black dark:text-white">ABOUT</g-link>
-        <g-link to="/#skills" class="font-bold uppercase cursor-pointer ml-7 md:ml-20 lg:ml-0 text-natural-black dark:text-white">SKILLS</g-link>
-        <g-link to="/blog" tag="li" class="font-bold uppercase cursor-pointer ml-7 md:ml-20 lg:ml-0 text-natural-black dark:text-white">BLOG</g-link>
+        <g-link to="/" tag="li" class="font-bold uppercase transition-colors ease-in-out cursor-pointer text-natural-black duration-70 dark:text-white">ABOUT</g-link>
+        <g-link to="/#skills" class="font-bold uppercase transition-colors ease-in-out cursor-pointer ml-7 md:ml-20 lg:ml-0 text-natural-black duration-70 dark:text-white">SKILLS</g-link>
+        <g-link to="/blog" tag="li" class="font-bold uppercase transition-colors ease-in-out cursor-pointer ml-7 md:ml-20 lg:ml-0 text-natural-black duration-70 dark:text-white">BLOG</g-link>
 				<li class="cursor-pointer ml-7 md:ml-20 lg:ml-0"><input id="toggle" @click="switchTheme" class="toggle" type="checkbox" :checked="theme === 'light'"></li>
       </ul>
     </nav>
