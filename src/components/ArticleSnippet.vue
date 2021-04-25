@@ -1,6 +1,6 @@
 <template>
 
-  <article class="relative flex justify-start pt-6 pb-5 border border-t-0 dark:text-white dark:bg-darkmode-dark-teal first:border-t first:rounded-t-md last:rounded-b-md border-light-text-200 hover:bg-light-text-100 article">
+  <article class="relative flex justify-start pt-6 pb-5 transition-colors ease-in-out border border-t-0 duration-70 dark:text-white dark:bg-darkmode-dark-teal first:border-t first:rounded-t-md last:rounded-b-md border-light-text-200 hover:bg-light-text-100 article">
 
     <div v-if="article.icon" class="w-24 pt-1">
       <img class="w-8 mx-auto" :src="article.icon.path" :alt="article.icon.alt" />
