@@ -1,4 +1,13 @@
 <template>
+  <header class="container flex justify-between items-end mt-8">
+    <!-- <g-image src="~/assets/navbar-logo.svg"></g-image> -->
+    <h1 class="text-3xl text-primary font-extrabold">Imrane</h1>
+    <nav class="space-x-10 font-semibold">
+      <g-link to="/#skills" class="relative">Skills <span class="hidden absolute bottom-0 left-0 w-full h-1 -mb-2 bg-primary rounded-full"></span></g-link>
+      <g-link to="/blog" class="relative">Blog <span class="hidden absolute bottom-0 left-0 w-full h-1 -mb-2 bg-primary rounded-full"></span></g-link>
+      <g-link to="/#contact" class="relative">Contact <span class="hidden absolute bottom-0 left-0 w-full h-1 -mb-2 bg-primary rounded-full"></span></g-link>
+    </nav>
+  </header>
 </template>
 
 <script>
@@ -27,6 +36,10 @@ export default {
 </script>
 
 <style>
+a.active > span {
+  @apply inline;
+}
+
 .toggle {
    --size: 1.4rem;
    appearance: none;
