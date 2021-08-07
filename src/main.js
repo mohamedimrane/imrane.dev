@@ -1,6 +1,10 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
+import 'virtual:windi.css'
+import "@fontsource/nunito-sans"
+import "@fontsource/fredoka-one";
+
 import DefaultLayout from '~/layouts/Default.vue'
 import BlogLayout from '~/layouts/Blog.vue'
 import ArticleLayout from '~/layouts/Article.vue'
@@ -8,11 +12,13 @@ import TagLayout from '~/layouts/Tag.vue'
 import AppHeader from "~/components/AppHeader.vue";
 import AppFooter from "~/components/AppFooter.vue";
 
-import "fontsource-nunito-sans/latin-400.css" // Normal
-import "fontsource-nunito-sans/latin-600.css" // Semibold
-import "fontsource-nunito-sans/latin-700.css" // Bold
-import "fontsource-nunito-sans/latin-800.css" // Extrabold
-import "fontsource-fredoka-one";
+
+// import "@fontsource/nunito-sans/latin-400.css" // Normal
+// import "@fontsource/nunito-sans/latin-600.css" // Semibold
+// import "@fontsource/nunito-sans/latin-700.css" // Bold
+// import "@fontsource/nunito-sans/latin-800.css" // Extrabold
+
+
 
 export default function (Vue, { router, head, isClient }) {
   // Register layouts
@@ -75,7 +81,7 @@ export default function (Vue, { router, head, isClient }) {
       key: 'twitter:description',
       name: 'twitter:description',
       content: 'Web Designer and Fullstack Developer'
-    }, 
+    },
     {
       key: 'twitter:url',
       name: 'twitter:url',

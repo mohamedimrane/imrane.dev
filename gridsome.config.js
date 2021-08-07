@@ -9,7 +9,15 @@ module.exports = {
   templates: {
     Tag: '/tag/:title',
   },
+
+
   plugins: [
+    {
+      use: 'gridsome-plugin-windicss',
+      options: {
+        // see https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts
+      }
+    },
     {
       use: '@gridsome/vue-remark',
       options: {
@@ -39,18 +47,18 @@ module.exports = {
         ]
       }
     },
-    {
-      use: "gridsome-plugin-tailwindcss",
-      /**
-      * These are the default options.
+    // {
+    //   use: "gridsome-plugin-tailwindcss",
+    //   /**
+    //   * These are the default options.
 
-      options: {
-        tailwindConfig: './tailwind.config.js',
-        presetEnvConfig: {},
-        shouldImport: false,
-        shouldTimeTravel: false
-      }
-      */
-    }
+    //   options: {
+    //     tailwindConfig: './tailwind.config.js',
+    //     presetEnvConfig: {},
+    //     shouldImport: false,
+    //     shouldTimeTravel: false
+    //   }
+    //   */
+    // }
   ]
 }

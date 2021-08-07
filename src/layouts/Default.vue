@@ -1,23 +1,15 @@
 <template>
-  <div :class="{ 'dark': theme === 'dark' }">
-    <div class="flex flex-col justify-between min-h-screen transition-colors duration-70 font-nunito-sans dark:bg-darkmode-teal">
-      <div>
-        <AppHeader @themeSwitched="switchTheme" />
-    
-        <main class="w-11/12 mx-auto mt-16 md:w-8/12 lg:w-6/12 lg:mt-32">
-          <slot />
-        </main>
-      </div>
-  
-      <AppFooter />
-    </div>
+  <div class="text-secondary" :class="{ 'dark': theme === 'dark' }">
+    <AppHeader @themeSwitched="switchTheme" />
+    <slot />
+    <AppFooter />
   </div>
 </template>
 
 <script>
 export default {
   data () {
-    return { 
+    return {
       theme: 'light'
     }
   },
