@@ -1,7 +1,9 @@
 <template>
   <div class="text-secondary" :class="{ 'dark': theme === 'dark' }">
     <AppHeader @themeSwitched="switchTheme" />
-    <slot />
+    <main class="overflow-hidden">
+      <slot />
+    </main>
     <AppFooter />
   </div>
 </template>
