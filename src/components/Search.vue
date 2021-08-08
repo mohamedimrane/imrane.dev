@@ -17,7 +17,7 @@
         <div class="flex flex-col">
           <g-link v-for="result in searchResults" :key="result.id" :to="result.path" class="p-4 font-semibold transition-colors ease-in-out border-b cursor-pointer duration-70 text-natural-black dark:bg-darkmode-dark-teal dark:text-white border-light-text10 hover:bg-light-text10">
             {{ result.title }}
-            <span class="block my-1 text-sm font-normal text-blue40">{{ result.node.summary }}</span>
+            <span class="block my-1 text-sm font-normal text-blue40">{{ result.node.description }}</span>
           </g-link>
         </div>
       </div>

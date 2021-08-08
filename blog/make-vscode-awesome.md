@@ -1,10 +1,10 @@
 ---
 title: Make Vscode Awesome
 slug: make-vscode-awesome
-summary: Lorem Ipsum Dolore Sit Amet
+description: Lorem Ipsum Dolore Sit Amet
 tags: [vscode, productivity]
 icon:
-    path: /icons/reactjs.svg
+    path: icons/reactjs.svg
     alt: "React JS"
 date: 2020-12-24
 ---
@@ -13,17 +13,17 @@ date: 2020-12-24
 
 ### Removing useless things
 
-Consequat adipisicing dolore ut adipisicing commodo. **Laboris ullamco veniam fugiat est aliquip labore duis minim.** *Nisi enim pariatur dolore magna enim aliqua.*  
+Consequat adipisicing dolore ut adipisicing commodo. **Laboris ullamco veniam fugiat est aliquip labore duis minim.** *Nisi enim pariatur dolore magna enim aliqua.*
 
 ---
 
-Labore `consectetur` reprehenderit cillum sunt ipsum tempor aliqua dolore excepteur nisi nisi sit et. Nulla cupidatat sit dolore id cupidatat excepteur reprehenderit ex excepteur laboris tempor. Commodo ex irure anim magna enim incididunt mollit do consequat aute incididunt ad id. Nostrud cupidatat sit ipsum cillum qui veniam elit in minim cillum aliqua adipisicing. Ad reprehenderit non quis officia sit ad exercitation nulla cillum sint laborum adipisicing nostrud aliqua.  
+Labore `consectetur` reprehenderit cillum sunt ipsum tempor aliqua dolore excepteur nisi nisi sit et. Nulla cupidatat sit dolore id cupidatat excepteur reprehenderit ex excepteur laboris tempor. Commodo ex irure anim magna enim incididunt mollit do consequat aute incididunt ad id. Nostrud cupidatat sit ipsum cillum qui veniam elit in minim cillum aliqua adipisicing. Ad reprehenderit non quis officia sit ad exercitation nulla cillum sint laborum adipisicing nostrud aliqua.
 
 ### Adding useful extensions
 
-Incididunt culpa irure dolor qui ut quis pariatur velit velit tempor. Labore deserunt irure eu dolore commodo nostrud. Lorem nulla Lorem cupidatat labore aliqua laboris commodo minim. Fugiat esse mollit non do tempor dolor irure occaecat minim quis sunt. Velit aute ipsum minim occaecat quis veniam aute.  
+Incididunt culpa irure dolor qui ut quis pariatur velit velit tempor. Labore deserunt irure eu dolore commodo nostrud. Lorem nulla Lorem cupidatat labore aliqua laboris commodo minim. Fugiat esse mollit non do tempor dolor irure occaecat minim quis sunt. Velit aute ipsum minim occaecat quis veniam aute.
 
-- New Moon  
+- New Moon
 - Bracketeer
 - Vetur
   - Test
@@ -32,8 +32,8 @@ Incididunt culpa irure dolor qui ut quis pariatur velit velit tempor. Labore des
 - Live Server
 
 1. A
-   1. YE 
-2. B 
+   1. YE
+2. B
 3. C
 4. D
 
@@ -45,7 +45,7 @@ Incididunt culpa irure dolor qui ut quis pariatur velit velit tempor. Labore des
 
 > The best view comes after the **hardest climb**
 > > That's true
-> > > Yeah   
+> > > Yeah
 >
 > > Of course
 

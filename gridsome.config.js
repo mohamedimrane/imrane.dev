@@ -42,7 +42,7 @@ module.exports = {
           {
             typeName: 'Article',
             indexName: 'Article',
-            fields: ['id', 'title', 'path', 'summary']
+            fields: ['id', 'title', 'path', 'description']
           }
         ]
       }

@@ -5,7 +5,7 @@
       <Search />
 
       <section id="articles" class="w-full mt-4 lg:mt-0 lg:w-2/3">
-        <ArticleSnippet v-for="edge in $page.articles.edges" :key="edge.title" :article="edge.node" />
+        <ArticleSnippet v-for="edge in $page.articles.edges" :key="edge.node.title" :article="edge.node" />
       </section>
     </div>
   </BlogLayout>
