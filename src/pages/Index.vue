@@ -74,8 +74,6 @@
       </div>
     </div>
     <!-- End Latest blog posts -->
-  <div>
-</div>
   </Layout>
 </template>
 
