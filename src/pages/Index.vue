@@ -55,11 +55,11 @@
               <div class="bg-white border-2 border-primary rounded-lg p-5 space-y-2 transform -translate-x-1 -translate-y-1">
                 <div class="flex items-center text-lg font-bold space-x-2">
                   <g-image :src="article.node.icon.path" :alt="article.node.icon.alt" class="w-8 h-8" />
-                  <g-link class="hover:underline" :to="article.node.path"><h3>{{ article.node.title }}</h3></g-link>
+                  <g-link class="transform hover:scale-102 transition duration-100 ease-in-out" :to="article.node.path" :title="article.node.title"><h3>{{ truncate(article.node.title, 27) }}</h3></g-link>
                 </div>
 
                 <div class="space-x-2 text-primary font-semibold">
-                  <g-link class="uppercase text-xs hover:underline" v-for="tag in article.node.tags" :key="tag.id" :to="tag.path">{{ tag.title }} </g-link>
+                  <g-link class="uppercase text-xs hover:bg-primary hover:text-white py-1 px-2 rounded-full transition duration-100 ease-in-out" v-for="tag in article.node.tags" :key="tag.id" :to="tag.path">{{ tag.title }}</g-link>
                 </div>
 
                 <p class="text-secondary-light">{{ article.node.description }}</p>
@@ -140,6 +140,14 @@ query Article {
 export default {
   metaInfo: {
     title: 'Portfolio'
+  },
+  methods: {
+    truncate (string, characters) {
+      if (string.length > characters) {
+        return string.split('').splice(0, characters).join('') + '...'
+      }
+      return string
+    }
   }
 }
 </script>
