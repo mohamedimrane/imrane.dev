@@ -26,12 +26,24 @@
             </div>
 
             <div class="grid grid-cols-3 gap-y-10">
-              <g-image class="w-20 h-20 mx-auto" src="~/assets/logos/laravel.svg"/>
-              <g-image class="w-20 h-20 mx-auto" src="~/assets/logos/vuejs.svg"/>
-              <g-image class="w-20 h-20 mx-auto" src="~/assets/logos/octobercms.svg"/>
-              <g-image class="w-20 h-20 mx-auto" src="~/assets/logos/nuxtjs.svg"/>
-              <g-image class="w-20 h-20 mx-auto" src="~/assets/logos/tailwindcss.svg"/>
-              <g-image class="w-20 h-20 mx-auto" src="~/assets/logos/gridsome.svg"/>
+              <a class="transform hover:scale-110 transition-transform duration-100 ease-in-out" href="http://laravel.com/" target="_blanck">
+                <g-image class="w-20 h-20 mx-auto" src="~/assets/logos/laravel.svg"/>
+              </a>
+              <a class="transform hover:scale-110 transition-transform duration-100 ease-in-out" href="http://vuejs.org/" target="_blanck">
+                <g-image class="w-20 h-20 mx-auto" src="~/assets/logos/vuejs.svg"/>
+              </a>
+              <a class="transform hover:scale-110 transition-transform duration-100 ease-in-out" href="https://octobercms.com/" target="_blanck">
+                <g-image class="w-20 h-20 mx-auto" src="~/assets/logos/octobercms.svg"/>
+              </a>
+              <a class="transform hover:scale-110 transition-transform duration-100 ease-in-out" href="https://nuxtjs.org/" target="_blanck">
+                <g-image class="w-20 h-20 mx-auto" src="~/assets/logos/nuxtjs.svg"/>
+              </a>
+              <a class="transform hover:scale-110 transition-transform duration-100 ease-in-out" href="https://tailwindcss.com/" target="_blanck">
+                <g-image class="w-20 h-20 mx-auto" src="~/assets/logos/tailwindcss.svg"/>
+              </a>
+              <a class="transform hover:scale-110 transition-transform duration-100 ease-in-out" href="https://gridsome.org/" target="_blanck">
+                <g-image class="w-20 h-20 mx-auto" src="~/assets/logos/gridsome.svg"/>
+              </a>
             </div>
           </div>
         </div>
@@ -55,7 +67,7 @@
               <div class="bg-white border-2 border-primary rounded-lg p-5 space-y-2 transform -translate-x-1 -translate-y-1">
                 <div class="flex items-center text-lg font-bold space-x-2">
                   <g-image :src="article.node.icon.path" :alt="article.node.icon.alt" class="w-8 h-8" />
-                  <g-link class="transform hover:scale-102 transition duration-100 ease-in-out" :to="article.node.path" :title="article.node.title"><h3>{{ truncate(article.node.title, 27) }}</h3></g-link>
+                  <g-link class="transform hover:scale-102 transition-transform duration-100 ease-in-out" :to="article.node.path" :title="article.node.title"><h3>{{ truncate(article.node.title, 27) }}</h3></g-link>
                 </div>
 
                 <div class="space-x-2 text-primary font-semibold">
