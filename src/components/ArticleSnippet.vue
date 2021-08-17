@@ -1,21 +1,15 @@
 <template>
-
-  <article class="relative flex justify-start pt-6 pb-5 transition-colors ease-in-out border border-t-0 duration-70 dark:text-white dark:bg-darkmode-dark-teal first:border-t first:rounded-t-md last:rounded-b-md border-light-text-200 hover:bg-light-text-100 article">
-
-    <div v-if="article.icon" class="w-24 pt-1">
-      <img class="w-8 mx-auto" :src="article.icon.path" :alt="article.icon.alt" />
+  <g-link tag="div" class="group bg-primary rounded-lg transform translate-x-1 translate-y-1 transform hover:scale-102 transition-transform duration-100 ease-in-out cursor-pointer" :to="article.path">
+    <div class="flex p-6 bg-white border-2 border-primary rounded-lg transform -translate-x-1 -translate-y-1">
+      <div class="w-1/12 flex items-center">
+        <g-image :src="article.icon.path" class="w-10 h-10" />
+      </div>
+      <div class="w-11/12">
+        <h4 class="block text-lg font-bold">{{ article.title }}</h4>
+        <time class="block text-sm text-secondary-light" :datetime="article.datetime">{{ article.date }}</time>
+      </div>
     </div>
-    <div class="w-full">
-      <g-link class="" :to="article.path">
-        <h4 class="font-semibold sm:text-lg text-blue30">
-          {{ article.title }}
-        </h4>
-      </g-link>
-
-      <time class="block mt-1 text-sm font-light text-blue40" :datetime="article.datetime">{{ article.date }}</time>
-    </div>
-  </article>
-
+  </g-link>
 </template>
 
 <script>
@@ -25,7 +19,7 @@ export default {
 </script>
 
 <style>
-.article:hover::after {
+/* .article:hover::after {
   content: '';
   width: 100%;
   height: 1px;
@@ -79,5 +73,5 @@ export default {
   margin: 0px 0px 0px -1px;
   box-sizing: content-box;
   transition: all 300ms ease-in-out;
-}
+} */
 </style>

@@ -1,32 +1,31 @@
 <template>
-  <div class="w-full mr-8 lg:w-1/3">
-    <div class="relative">
-      <input type="text" id="search-bar" placeholder="Search" v-model="searchTerm" class="w-full h-10 pl-10 pr-3 text-lg transition-colors ease-in-out border border-opacity-50 rounded duration-70 dark:text-white dark:bg-darkmode-dark-teal focus:outline-none focus:ring-1 placeholder-blue50 border-light-text-200 text-natural-black">
-      <div class="absolute stroke-current left-2 top-1.5 text-blue50">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-            stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round">
-          <circle cx="11" cy="11" r="8" />
-          <path d="M21 21l-4.35-4.35" />
-        </svg>
-      </div>
-      <div v-if="searchTerm.length > 0" class="absolute top-0 right-0 mr-3 text-2xl text-gray-600 cursor-pointer hover:text-gray-800" style="top:2px;" @click="reset">
-        &times;
-      </div>
-      <div v-if="searchResults.length > 0" class="absolute left-0 right-0 z-10 mt-2 mb-4 overflow-hidden overflow-y-auto text-left normal-case bg-white border rounded shadow-sm" style="max-height: 32rem">
-        <div class="flex flex-col">
-          <g-link v-for="result in searchResults" :key="result.id" :to="result.path" class="p-4 font-semibold transition-colors ease-in-out border-b cursor-pointer duration-70 text-natural-black dark:bg-darkmode-dark-teal dark:text-white border-light-text10 hover:bg-light-text10">
-            {{ result.title }}
-            <span class="block my-1 text-sm font-normal text-blue40">{{ result.node.description }}</span>
-          </g-link>
-        </div>
-      </div>
-      <div v-if="searchResults.length === 0 & searchTerm.length > 2" class="w-full p-4 mt-1 font-normal transition-colors ease-in-out border-b cursor-pointer bg-light-text10 duration-70 dark:text-white text-natural-black">
-        <p class="my-0">
-          No results for '<strong>{{ searchTerm }}</strong>'
-        </p>
+  <div>
+    <!-- Start Input -->
+    <div class="bg-primary rounded-lg transform translate-x-1 translate-y-1 text-sm">
+      <div class="relative">
+        <input type="text" id="search-bar" placeholder="Search" v-model="searchTerm" class="w-full text-sm pr-8 pl-8 bg-white border-2 border-primary focus:border-primary rounded-lg transform -translate-x-1 -translate-y-1 focus:ring-0">
+        <svg class="text-secondary-light fill-current absolute w-4 h-4 top-0 left-2 top-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/></svg>
+        <svg v-if="searchTerm.length > 0" class="text-secondary-light fill-current absolute w-6 h-6 top-1.5 right-2" @click="reset" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/></svg>
       </div>
     </div>
+    <!-- End Input -->
+
+    <!-- Start Suggestions -->
+    <div v-if="searchResults.length > 0" class="mt-4 bg-primary rounded-lg transform translate-x-1 translate-y-1">
+      <div class="bg-white border-2 border-primary rounded-lg transform -translate-x-1 -translate-y-1 px-4">
+        <div v-for="result in searchResults" :key="result.node.id" class="border-b-1 last:border-b-0 py-4">
+          <g-link :to="result.node.path" class="inline-block font-bold transform hover:scale-102 transition-transform duration-100 ease-in-out">{{ result.node.title }}</g-link>
+          <p class="text-xs text-secondary-light">{{ result.node.description }}</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Suggestions -->
+
+    <!-- Start "Not Found" -->
+    <div v-if="searchResults.length === 0 & searchTerm.length > 2" class="mt-1 p-4 border-b-2 text-sm">
+      No results for '<strong>{{ searchTerm }}</strong>'
+    </div>
+    <!-- End "Not Found" -->
   </div>
 </template>
 

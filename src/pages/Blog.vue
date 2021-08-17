@@ -1,16 +1,27 @@
 <template>
   <Layout>
-    <div class="container mt-20">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat earum nihil vitae fugiat harum autem error assumenda doloribus nostrum voluptates minus in voluptatibus sequi asperiores, vero facere quidem soluta quia? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non architecto expedita, labore nulla vero quis optio ratione fugiat accusantium aliquam! Quo blanditiis esse consequatur quas sapiente laborum possimus culpa nisi!
-    </div>
-    <!-- <h2 class="text-3xl font-bold lg:text-4xl text-natural-black dark:text-white">Articles</h2>
-    <div class="flex flex-col justify-between mt-6 lg:mt-10 lg:flex-row">
-      <Search />
+    <div class="container mt-20 flex flex-col">
+      <!-- Start Title -->
+      <h2 class="text-3xl font-extrabold relative flex items-center self-start ml-2">
+        <span class="absolute inline-block w-full h-3 mt-2 -ml-2 bg-primary"></span>
+        <span class="z-50">Blog Posts</span>
+      </h2>
+      <!-- End Title -->
 
-      <section id="articles" class="w-full mt-4 lg:mt-0 lg:w-2/3">
-        <ArticleSnippet v-for="edge in $page.articles.edges" :key="edge.node.title" :article="edge.node" />
-      </section>
-    </div> -->
+      <div class="flex space-x-6 mt-10">
+        <!-- Start Articles list -->
+        <div class="w-2/3 space-y-4">
+          <ArticleSnippet v-for="edge in $page.articles.edges" :key="edge.node.id" :article="edge.node" />
+        </div>
+        <!-- End Articles list -->
+
+        <!-- Start Search -->
+        <div class="w-1/3">
+          <Search />
+        </div>
+        <!-- End Search -->
+      </div>
+    </div>
   </Layout>
 </template>
 
