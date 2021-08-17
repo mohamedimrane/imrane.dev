@@ -6,7 +6,6 @@ import "@fontsource/nunito-sans"
 import "@fontsource/fredoka-one";
 
 import DefaultLayout from '~/layouts/Default.vue'
-import BlogLayout from '~/layouts/Blog.vue'
 import ArticleLayout from '~/layouts/Article.vue'
 import TagLayout from '~/layouts/Tag.vue'
 import AppHeader from "~/components/AppHeader.vue";
@@ -23,7 +22,6 @@ import AppFooter from "~/components/AppFooter.vue";
 export default function (Vue, { router, head, isClient }) {
   // Register layouts
   Vue.component('Layout', DefaultLayout)
-  Vue.component('BlogLayout', BlogLayout)
   Vue.component('ArticleLayout', ArticleLayout)
   Vue.component('TagLayout', TagLayout)
   Vue.component('AppHeader', AppHeader)
