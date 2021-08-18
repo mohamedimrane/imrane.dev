@@ -33,6 +33,11 @@ query Article {
         title
         id
         path
+        tags {
+          id
+          title
+          path
+        }
         icon {
           path
           alt
