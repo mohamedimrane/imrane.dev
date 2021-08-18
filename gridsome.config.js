@@ -7,7 +7,7 @@
 module.exports = {
   siteName: 'Imrane Chehabi',
   templates: {
-    Tag: '/tag/:title',
+    Tag: '/blog/tag/:title',
   },
 
 
@@ -23,7 +23,7 @@ module.exports = {
       options: {
         typeName: 'Article',
         baseDir: './blog',
-        route: '/article/:slug',
+        route: '/blog/article/:slug',
         template: './src/templates/Article.vue',
         refs: {
           tags: {
