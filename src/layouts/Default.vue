@@ -1,6 +1,6 @@
 <template>
   <div class="text-secondary flex flex-col justify-between min-h-screen overflow-hidden" :class="{ 'dark': theme === 'dark' }">
-    <div>
+    <div class="mb-30">
       <AppHeader @themeSwitched="switchTheme" />
       <main>
         <slot />
