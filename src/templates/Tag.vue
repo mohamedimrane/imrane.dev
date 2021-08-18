@@ -1,10 +1,16 @@
 <template>
-  <TagLayout>
-    <h2 class="text-3xl font-bold lg:text-4xl text-natural-black dark:text-white">Tag: {{ stringCapitalize($page.tag.title) }}</h2>
-    <section id="articles" class="w-full mt-6 lg:mt-10">
-      <ArticleSnippet v-for="edge in $page.tag.belongsTo.edges" :key="edge.title" :article="edge.node" />
-    </section>
-  </TagLayout>
+  <Layout>
+    <div class="container mt-20 flex flex-col">
+      <h2 class="text-3xl font-extrabold relative flex items-center self-start ml-2">
+        <span class="absolute inline-block w-full h-3 mt-2 -ml-2 bg-primary"></span>
+        <span class="z-50">Tag: {{ stringCapitalize($page.tag.title) }}</span>
+      </h2>
+
+      <div class="space-y-4 mt-10">
+        <ArticleSnippet v-for="edge in $page.tag.belongsTo.edges" :key="edge.title" :article="edge.node" />
+      </div>
+    </div>
+  </Layout>
 </template>
 
 <page-query>
@@ -18,6 +24,11 @@ query Tag ($id: ID!) {
           ... on Article {
             title
             path
+            tags {
+              id
+              title
+              path
+            }
             icon {
               path
               alt
