@@ -3,7 +3,6 @@
     <!-- <g-image src="~/assets/navbar-logo.svg"></g-image> -->
     <g-link to="/"><h1 class="text-3xl text-primary font-extrabold">Imrane</h1></g-link>
     <nav class="space-x-10 font-semibold">
-      <g-link to="/#skills" class="relative">Skills <div class="hidden absolute bottom-0 left-0 w-full h-1 -mb-2 bg-primary rounded-full"></div></g-link>
       <g-link to="/blog" class="relative">Blog <div class="hidden absolute bottom-0 left-0 w-full h-1 -mb-2 bg-primary rounded-full"></div></g-link>
       <g-link to="/#contact" class="relative">Contact <div class="hidden absolute bottom-0 left-0 w-full h-1 -mb-2 bg-primary rounded-full"></div></g-link>
     </nav>

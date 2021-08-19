@@ -88,7 +88,7 @@
     <!-- End Latest blog posts -->
 
     <!-- Start Contact-->
-    <div>
+    <div id="contact">
       <svg class="w-full text-gray-200 fill-current" viewBox="0 0 1400 74" xmlns="http://www.w3.org/2000/svg"><path d="M0 24C87.243 11.422 173.12 5.133 257.633 5.133 468.305 5.133 578.027 74 700 74c136.015 0 290.882-96.208 481.234-68.867C1268.807 17.71 1341.73 24 1400 24v50H0V24z"></path></svg>
       <div class="py-40 bg-gray-200">
         <div class="container flex flex-col space-y-10">
