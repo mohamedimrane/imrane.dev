@@ -6,9 +6,6 @@ import "@fontsource/nunito-sans"
 import "@fontsource/fredoka-one";
 
 import DefaultLayout from '~/layouts/Default.vue'
-import AppHeader from "~/components/AppHeader.vue";
-import AppFooter from "~/components/AppFooter.vue";
-
 
 // import "@fontsource/nunito-sans/latin-400.css" // Normal
 // import "@fontsource/nunito-sans/latin-600.css" // Semibold
@@ -20,8 +17,6 @@ import AppFooter from "~/components/AppFooter.vue";
 export default function (Vue, { router, head, isClient }) {
   // Register layouts
   Vue.component('Layout', DefaultLayout)
-  Vue.component('AppHeader', AppHeader)
-  Vue.component('AppFooter', AppFooter)
 
   // Add meta tags
   head.meta.push(...[
