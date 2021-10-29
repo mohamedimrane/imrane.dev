@@ -62,12 +62,12 @@
 
       <div class="mt-6 flex">
         <div class="grid grid-cols-2 gap-x-10 col-span-2 w-2/3 flex-1">
-          <div v-for="article in $page.articles.edges" :key="article.node.id">
+          <div v-for="article in $page.articles.edges" :key="article.node.id" class="transform hover:scale-102 transition-transform duration-100 ease-in-out">
             <div class="bg-primary rounded-lg transform translate-x-1 translate-y-1">
               <div class="bg-white border-2 border-primary rounded-lg p-5 space-y-2 transform -translate-x-1 -translate-y-1">
                 <div class="flex items-center text-lg font-bold space-x-2">
                   <g-image :src="article.node.icon.path" :alt="article.node.icon.alt" class="w-8 h-8" />
-                  <g-link class="transform hover:scale-102 transition-transform duration-100 ease-in-out" :to="article.node.path" :title="article.node.title"><h3>{{ truncate(article.node.title, 27) }}</h3></g-link>
+                  <g-link class="truncate" :to="article.node.path" :title="article.node.title"><h3>{{ truncate(article.node.title, 27) }}</h3></g-link>
                 </div>
 
                 <div class="space-x-2 text-primary font-semibold">
