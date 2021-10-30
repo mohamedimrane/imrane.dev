@@ -44,6 +44,18 @@
               <a class="transform hover:scale-110 transition-transform duration-100 ease-in-out" href="https://gridsome.org/" target="_blanck">
                 <g-image class="w-20 h-20 mx-auto" src="~/assets/logos/gridsome.svg"/>
               </a>
+              <a class="transform hover:scale-110 transition-transform duration-100 ease-in-out" href="https://golang.org/" target="_blanck">
+                <g-image class="w-20 h-20 mx-auto" src="~/assets/logos/go.svg"/>
+              </a>
+              <a class="transform hover:scale-110 transition-transform duration-100 ease-in-out" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript" target="_blanck">
+                <g-image class="w-18 h-18 mx-auto" src="~/assets/logos/javascript.svg"/>
+              </a>
+              <a class="transform hover:scale-110 transition-transform duration-100 ease-in-out" href="https://www.typescriptlang.org/" target="_blanck">
+                <g-image class="w-18 h-18 mx-auto" src="~/assets/logos/typescript.svg"/>
+              </a>
+              <a class="transform hover:scale-110 transition-transform duration-100 ease-in-out" href="https://www.php.net/" target="_blanck">
+                <g-image class="w-20 h-20 mx-auto" src="~/assets/logos/php.svg"/>
+              </a>
             </div>
           </div>
         </div>
