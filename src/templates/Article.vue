@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <main class="container mt-20 mb-20">
+    <main class="container mt-20 mb-40">
       <div class="space-y-2">
         <h1 class="text-3xl font-bold">{{ $page.article.title }}</h1>
         <p class="text-secondary-light">Last update on <time :datetime="$page.article.datetime">{{ $page.article.date }}</time></p>

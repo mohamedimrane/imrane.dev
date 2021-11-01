@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="container mb-20 mt-20 flex flex-col">
+    <div class="container mb-40 mt-20 flex flex-col">
       <!-- Start Title -->
       <h2 class="text-3xl font-extrabold relative flex items-center self-start ml-2">
         <span class="absolute inline-block w-full h-3 mt-2 -ml-2 bg-primary"></span>

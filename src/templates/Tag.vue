@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="container mt-20 mb-20 flex flex-col">
+    <div class="container mt-20 mb-40 flex flex-col">
       <h2 class="text-3xl font-extrabold relative flex items-center self-start ml-2">
         <span class="absolute inline-block w-full h-3 mt-2 -ml-2 bg-primary"></span>
         <span class="z-50">Tag: {{ stringCapitalize($page.tag.title) }}</span>
