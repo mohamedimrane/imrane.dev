@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  props: ['article'],
+  props: ['article']
 }
 </script>
 

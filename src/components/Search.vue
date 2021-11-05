@@ -41,6 +41,6 @@ export default {
       this.highlightedIndex = 0
     },
   },
-  mixins: [Search],
+  mixins: [Search]
 }
 </script>

@@ -90,7 +90,7 @@ export default {
       ]
     }
   }
-};
+}
 </script>
 
 <style src="../github-markdown.css" />
