@@ -73,7 +73,7 @@
       </h2>
 
       <div class="mt-6 flex">
-        <div class="grid grid-cols-2 gap-x-10 gap-y-5 col-span-2 w-2/3 flex-1">
+        <div class="grid grid-cols-2 gap-x-10 gap-y-10 h-full col-span-2 w-2/3 flex-1">
           <div v-for="article in $page.latestArticles.edges" :key="article.node.id" class="transform hover:scale-102 transition-transform duration-100 ease-in-out">
             <div class="bg-primary rounded-lg transform translate-x-1 translate-y-1">
               <div class="bg-white border-2 border-primary rounded-lg p-5 space-y-2 transform -translate-x-1 -translate-y-1">
@@ -137,7 +137,7 @@
 
 <page-query>
 query Article {
-  latestArticles: allArticle {
+  latestArticles: allArticle (limit: 4) {
     edges {
       node {
         title
