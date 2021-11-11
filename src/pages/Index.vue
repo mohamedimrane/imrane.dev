@@ -86,7 +86,7 @@
                   <g-link class="uppercase text-xs hover:bg-primary hover:text-white py-1 px-2 rounded-full transition duration-100 ease-in-out" v-for="tag in article.node.tags" :key="tag.id" :to="tag.path">{{ tag.title }}</g-link>
                 </div>
 
-                <p class="text-secondary-light">{{ article.node.description }}</p>
+                <p class="text-sm text-secondary-light">{{ article.node.description }}</p>
               </div>
             </div>
           </div>
