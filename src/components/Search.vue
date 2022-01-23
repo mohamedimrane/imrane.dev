@@ -15,7 +15,7 @@
     <!-- Start Suggestions -->
     <div v-if="searchResults.length > 0" class="mt-4 bg-primary rounded-lg transform translate-x-1 translate-y-1">
       <div class="bg-white border-2 border-primary rounded-lg transform -translate-x-1 -translate-y-1 px-4">
-        <div v-for="result in searchResults" :key="result.node.id" class="border-b-1 last:border-b@-0 py-4">
+        <div v-for="result in searchResults" :key="result.node.id" class="border-b-1 last:border-b-0 py-4">
           <g-link :to="result.node.path" class="inline-block font-bold hover:text-primary transition-colors duration-100 ease-in-out">{{ result.node.title }}</g-link>
           <p class="text-xs text-secondary-light">{{ result.node.description }}</p>
         </div>
