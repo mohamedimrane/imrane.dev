@@ -51,8 +51,8 @@ query Article {
 </page-query>
 
 <script>
-import ArticleSnippet from "~/components/ArticleSnippet.vue";
-import Search from "~/components/Search.vue";
+import ArticleSnippet from "~/components/blog/ArticleSnippet.vue";
+import Search from "~/components/blog/Search.vue";
 
 export default {
   components: {

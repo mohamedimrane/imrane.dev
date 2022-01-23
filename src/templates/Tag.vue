@@ -44,7 +44,7 @@ query Tag ($id: ID!) {
 </page-query>
 
 <script>
-import ArticleSnippet from "~/components/ArticleSnippet.vue"
+import ArticleSnippet from "~/components/blog/ArticleSnippet.vue"
 
 export default {
   methods: {
