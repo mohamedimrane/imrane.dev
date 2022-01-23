@@ -17,13 +17,13 @@
 
 <script>
 export default {
-  props: ['article']
+  props: ["article"]
 }
 </script>
 
 <style>
 /* .article:hover::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 1px;
   border: solid 1px rgba(4, 25, 50);
@@ -37,7 +37,7 @@ export default {
 }
 
 .article::after {
-  content: '';
+  content: "";
   width: 0%;
   height: 0;
   border: solid 1px rgba(4, 25, 50, 0, 0);
@@ -51,7 +51,7 @@ export default {
 }
 
 .dark .article:hover::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 1px;
   border: solid 1px rgba(208, 217, 226);
@@ -65,7 +65,7 @@ export default {
 }
 
 .dark .article::after {
-  content: '';
+  content: "";
   width: 0%;
   height: 0;
   border: solid 1px rgba(208, 217, 226, 0, 0);

@@ -5,44 +5,44 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Imrane Chehabi',
+  siteName: "Imrane Chehabi",
   templates: {
-    Tag: '/blog/tag/:title',
+    Tag: "/blog/tag/:title",
   },
 
 
   plugins: [
     {
-      use: 'gridsome-plugin-windicss',
+      use: "gridsome-plugin-windicss",
       options: {
         // see https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts
       }
     },
     {
-      use: '@gridsome/vue-remark',
+      use: "@gridsome/vue-remark",
       options: {
-        typeName: 'Article',
-        baseDir: './blog',
-        route: '/blog/article/:slug',
-        template: './src/templates/Article.vue',
+        typeName: "Article",
+        baseDir: "./blog",
+        route: "/blog/article/:slug",
+        template: "./src/templates/Article.vue",
         refs: {
           tags: {
-            typeName: 'Tag',
+            typeName: "Tag",
             create: true
           }
         },
-        plugins: [['gridsome-plugin-remark-shiki', { theme: 'nord', skipInline: true }]],
+        plugins: [["gridsome-plugin-remark-shiki", { theme: "nord", skipInline: true }]],
       }
     },
     {
-      use: 'gridsome-plugin-flexsearch',
+      use: "gridsome-plugin-flexsearch",
       options: {
-        searchFields: ['title', 'tags'],
+        searchFields: ["title", "tags"],
         collections: [
           {
-            typeName: 'Article',
-            indexName: 'Article',
-            fields: ['id', 'title', 'path', 'description']
+            typeName: "Article",
+            indexName: "Article",
+            fields: ["id", "title", "path", "description"]
           }
         ]
       }
@@ -53,7 +53,7 @@ module.exports = {
     //   * These are the default options.
 
     //   options: {
-    //     tailwindConfig: './tailwind.config.js',
+    //     tailwindConfig: "./tailwind.config.js",
     //     presetEnvConfig: {},
     //     shouldImport: false,
     //     shouldTimeTravel: false

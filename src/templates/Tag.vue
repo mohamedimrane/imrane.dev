@@ -49,7 +49,7 @@ import ArticleSnippet from "~/components/blog/ArticleSnippet.vue"
 export default {
   methods: {
     stringCapitalize (str) {
-      if (typeof str !== 'string') return ''
+      if (typeof str !== "string") return ""
       return str[0].toUpperCase() + str.slice(1)
     }
   },
@@ -58,51 +58,51 @@ export default {
   },
   metaInfo () {
     return {
-      title: 'Tag: ' + this.stringCapitalize(this.$page.tag.title),
+      title: "Tag: " + this.stringCapitalize(this.$page.tag.title),
       meta: [
         {
-          key: 'title',
-          name: 'title',
-          content: 'Tag: ' + this.$page.tag.title + ' | Mohamed Imrane Chehabi'
+          key: "title",
+          name: "title",
+          content: "Tag: " + this.$page.tag.title + " | Mohamed Imrane Chehabi"
         },
         {
-          key: 'description',
-          name: 'description',
-          content: ''
+          key: "description",
+          name: "description",
+          content: ""
         },
         {
-          name: 'author',
-          content: 'Mohamed Imrane Chehabi'
+          name: "author",
+          content: "Mohamed Imrane Chehabi"
         },
         {
-          key: 'og:title',
-          property: 'og:title',
-          content: 'Tag: ' + this.$page.tag.title + ' | Mohamed Imrane Chehabi'
+          key: "og:title",
+          property: "og:title",
+          content: "Tag: " + this.$page.tag.title + " | Mohamed Imrane Chehabi"
         },
         {
-          key: 'og:description',
-          property: 'og:description',
-          content: ''
+          key: "og:description",
+          property: "og:description",
+          content: ""
         },
         {
-          key: 'og:url',
-          property: 'og:url',
-          content: 'https://www.imrane.dev' + this.$page.tag.path
+          key: "og:url",
+          property: "og:url",
+          content: "https://www.imrane.dev" + this.$page.tag.path
         },
         {
-          key: 'twitter:title',
-          name: 'twitter:title',
-          content: 'Tag: ' + this.$page.tag.title + ' | Mohamed Imrane Chehabi'
+          key: "twitter:title",
+          name: "twitter:title",
+          content: "Tag: " + this.$page.tag.title + " | Mohamed Imrane Chehabi"
         },
         {
-          key: 'twitter:description',
-          name: 'twitter:description',
-          content: ''
+          key: "twitter:description",
+          name: "twitter:description",
+          content: ""
         },
         {
-          key: 'twitter:url',
-          name: 'twitter:url',
-          content: 'https://www.imrane.dev' + this.$page.tag.path
+          key: "twitter:url",
+          name: "twitter:url",
+          content: "https://www.imrane.dev" + this.$page.tag.path
         }
       ]
     }

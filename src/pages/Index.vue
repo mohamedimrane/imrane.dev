@@ -21,7 +21,7 @@ export default {
     IndexContact
   },
   metaInfo: {
-    title: 'Portfolio'
+    title: "Portfolio"
   },
 
 }

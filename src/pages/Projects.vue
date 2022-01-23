@@ -83,18 +83,18 @@ export default {
     title: "Projects",
     meta: [
       {
-        key: 'title',
-        name: 'title',
-        content: 'Projects | Mohamed Imrane Chehabi'
+        key: "title",
+        name: "title",
+        content: "Projects | Mohamed Imrane Chehabi"
       },
       {
-        key: 'description',
-        name: 'description',
-        content: ''
+        key: "description",
+        name: "description",
+        content: ""
       },
       {
-        name: 'author',
-        content: ''
+        name: "author",
+        content: ""
       }
     ]
   }

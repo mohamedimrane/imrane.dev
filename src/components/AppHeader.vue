@@ -14,20 +14,20 @@ export default {
   computed: {
     theme () {
       if (typeof window !== `undefined`) {
-        return window.localStorage.getItem('theme')
+        return window.localStorage.getItem("theme")
       }
     }
   },
   updated () {
     if (typeof window !== `undefined`) {
-      this.theme = window.localStorage.getItem('theme')
+      this.theme = window.localStorage.getItem("theme")
     }
   },
   methods: {
     switchTheme () {
       if (typeof window !== `undefined`) {
-        window.localStorage.setItem('theme', window.localStorage.getItem('theme') === 'light' ? 'dark' : 'light')
-        this.$emit('themeSwitched')
+        window.localStorage.setItem("theme", window.localStorage.getItem("theme") === "light" ? "dark" : "light")
+        this.$emit("themeSwitched")
       }
     }
   },

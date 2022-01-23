@@ -18,30 +18,30 @@ export default {
   components: { AppHeader, AppFooter },
   data () {
     return {
-      theme: 'light'
+      theme: "light"
     }
   },
   created () {
-    if (typeof window !== 'undefined') {
-      if (!window.localStorage.getItem('theme')) {
-        window.localStorage.setItem('theme', 'light')
+    if (typeof window !== "undefined") {
+      if (!window.localStorage.getItem("theme")) {
+        window.localStorage.setItem("theme", "light")
       }
     }
   },
   mounted () {
     if (typeof window !== `undefined`) {
-      this.theme = window.localStorage.getItem('theme')
+      this.theme = window.localStorage.getItem("theme")
     }
   },
   updated () {
     if (typeof window !== `undefined`) {
-      this.theme = window.localStorage.getItem('theme')
+      this.theme = window.localStorage.getItem("theme")
     }
   },
   methods: {
     switchTheme () {
       if (typeof window !== `undefined`) {
-        this.theme = window.localStorage.getItem('theme')
+        this.theme = window.localStorage.getItem("theme")
       }
     }
   }

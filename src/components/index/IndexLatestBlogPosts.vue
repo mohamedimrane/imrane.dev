@@ -62,7 +62,7 @@ export default {
   methods: {
     truncate (string, characters) {
       if (string.length > characters) {
-        return string.split('').splice(0, characters).join('') + '...'
+        return string.split("").splice(0, characters).join("") + "..."
       }
       return string
     }

@@ -25,19 +25,19 @@
 
     <!-- Start "Not Found" -->
     <div v-if="searchResults.length === 0 & searchTerm.length > 2" class="mt-1 p-4 border-b-2 text-sm">
-      No results for '<strong>{{ searchTerm }}</strong>'
+      No results for "<strong>{{ searchTerm }}</strong>"
     </div>
     <!-- End "Not Found" -->
   </div>
 </template>
 
 <script>
-import Search from 'gridsome-plugin-flexsearch/SearchMixin'
+import Search from "gridsome-plugin-flexsearch/SearchMixin"
 
 export default {
   methods: {
     reset() {
-      this.searchTerm = ''
+      this.searchTerm = ""
       this.highlightedIndex = 0
     },
   },
