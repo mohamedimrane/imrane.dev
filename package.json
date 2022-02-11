@@ -1,21 +1,24 @@
 {
-  "name": "temp",
+  "name": "test-nuxt",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "gridsome build",
-    "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
   },
   "dependencies": {
-    "@fontsource/fredoka-one": "^4.5.0",
-    "@fontsource/nunito-sans": "^4.5.0",
-    "@gridsome/vue-remark": "^0.2.6",
-    "gridsome": "^0.7.23",
-    "gridsome-plugin-flexsearch": "^2.0.1",
-    "gridsome-plugin-remark-shiki": "^0.6.0"
+    "@fontsource/nunito-sans": "^4.5.2",
+    "@nuxt/content": "^1.15.1",
+    "core-js": "^3.19.3",
+    "nuxt": "^2.15.8",
+    "vue": "^2.6.14",
+    "vue-server-renderer": "^2.6.14",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^4.46.0"
   },
   "devDependencies": {
-    "gridsome-plugin-windicss": "^1.0.5",
-    "windicss": "3.1.6"
+    "nuxt-windicss": "^2"
   }
 }

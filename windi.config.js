@@ -14,20 +14,24 @@ module.exports = {
   transformCSS: "pre",
   preflight: {
     alias: {
-      // add gridsome aliases
-      "g-link": "a",
-      "g-image": "img",
+      "NuxtLink": "a",
     },
   },
 
-  safelist: ["prose", "prose-sm", "m-auto", "body",
+  safelist: [
+    "prose",
+    "prose-sm",
+    "m-auto",
+    "body",
     "html",
     "img",
     "a",
     "g-image",
     "g-image--lazy",
     "g-image--loaded",
-    "active"],
+    "active",
+    "text-secondary"
+  ],
   darkMode: "class", // or "media" or "class" or false
   theme: {
     container: {
@@ -69,5 +73,7 @@ module.exports = {
   },
   variants: {
   },
-  plugins: [require("windicss/plugin/forms")],
+  plugins: [
+    require("windicss/plugin/forms")
+  ],
 }

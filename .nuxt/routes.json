@@ -1,0 +1,30 @@
+[
+  {
+    "name": "404",
+    "path": "/404",
+    "component": "/Users/imrane/Dev/Sites/imrane.dev/pages/404.vue",
+    "chunkName": "pages/404",
+    "_name": "_1976cbe9"
+  },
+  {
+    "name": "blog",
+    "path": "/blog",
+    "component": "/Users/imrane/Dev/Sites/imrane.dev/pages/blog.vue",
+    "chunkName": "pages/blog",
+    "_name": "_e501cf7e"
+  },
+  {
+    "name": "projects",
+    "path": "/projects",
+    "component": "/Users/imrane/Dev/Sites/imrane.dev/pages/projects.vue",
+    "chunkName": "pages/projects",
+    "_name": "_1518f999"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/imrane/Dev/Sites/imrane.dev/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_8aada77a"
+  }
+]
