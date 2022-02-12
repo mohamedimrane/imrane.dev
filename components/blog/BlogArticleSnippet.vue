@@ -1,8 +1,8 @@
 <template>
-  <nuxt-link tag="div" class="group bg-primary rounded-lg transform translate-x-1 translate-y-1 transform hover:scale-102 transition-transform duration-100 ease-in-out cursor-pointer" :to="article.path">
+  <nuxt-link tag="div" :to="'blog/article' + article.path" class="group bg-primary rounded-lg transform translate-x-1 translate-y-1 transform hover:scale-102 transition-transform duration-100 ease-in-out cursor-pointer">
     <div class="flex p-6 bg-white border-2 border-primary rounded-lg transform -translate-x-1 -translate-y-1">
       <div class="w-1/12 flex items-center">
-        <img :src="'/' + article.icon.path" class="w-10 h-10" />
+        <img :src="article.icon.path" class="w-10 h-10" />
       </div>
       <div class="w-11/12">
         <h4 class="block text-lg font-bold">{{ article.title }}</h4>

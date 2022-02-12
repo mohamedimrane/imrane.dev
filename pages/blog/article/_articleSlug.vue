@@ -28,7 +28,26 @@ export default {
 
   computed: {
     articleFormatedUpdatedAt() {
-      return new Date(this.article.updatedAt).toLocaleDateString("en");
+      let monthsNames = {
+        1: "January",
+        2: "February",
+        3: "March",
+        4: "April",
+        5: "May",
+        6: "June",
+        7: "July",
+        8: "August",
+        9: "Septembre",
+        10: "October",
+        11: "November",
+        12: "December",
+      }
+
+      let date = new Date(this.article.updatedAt)
+
+      let formatedDate = monthsNames[date.getMonth()+1] + " " + date.getDate() + ", " + date.getFullYear()
+
+      return formatedDate
     }
   },
 
