@@ -15,9 +15,9 @@
     <!-- Start Suggestions -->
     <div v-if="searchResults.length > 0" class="mt-4 bg-primary rounded-lg transform translate-x-1 translate-y-1">
       <div class="bg-white border-2 border-primary rounded-lg transform -translate-x-1 -translate-y-1 px-4">
-        <div v-for="result in searchResults" :key="result.node.id" class="border-b-1 last:border-b-0 py-4">
-          <g-link :to="result.node.path" class="inline-block font-bold hover:text-primary transition-colors duration-100 ease-in-out">{{ result.node.title }}</g-link>
-          <p class="text-xs text-secondary-light">{{ result.node.description }}</p>
+        <div v-for="result in searchResults" :key="result.id" class="border-b-1 last:border-b-0 py-4">
+          <nuxt-link :to="'/blog/article' + result.path" class="inline-block font-bold hover:text-primary transition-colors duration-100 ease-in-out">{{ result.title }}</nuxt-link>
+          <p class="text-xs text-secondary-light">{{ result.description }}</p>
         </div>
       </div>
     </div>
@@ -25,7 +25,7 @@
 
     <!-- Start "Not Found" -->
     <div v-if="searchResults.length === 0 & searchTerm.length > 2" class="mt-1 p-4 border-b-2 text-sm">
-      No results for "<strong>{{ searchTerm }}</strong>"
+      No results for "<strong class="font-bold">{{ searchTerm }}</strong>"
     </div>
     <!-- End "Not Found" -->
   </div>
@@ -33,11 +33,40 @@
 
 <script>
 export default {
+
+  async fetch() {
+    this.allArticles = await this.$content("")
+      .only([ "id", "path", "title", "description" ])
+      .fetch()
+  },
+
+  data() {
+    return {
+      searchTerm: "",
+      allArticles: [],
+      searchResults: []
+    }
+  },
+
+  watch: {
+    searchTerm(val) {
+      if (val === "") {
+        this.searchResults = []
+        return
+      }
+
+      this.searchResults = this.allArticles.filter((article) => {
+        return article.title.toLowerCase().includes(val.toLowerCase())
+      })
+    }
+  },
+
   methods: {
     reset() {
       this.searchTerm = ""
       this.highlightedIndex = 0
     },
-  },
+  }
+
 }
 </script>

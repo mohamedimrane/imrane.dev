@@ -17,7 +17,7 @@
 
         <!-- Start Search -->
         <div class="w-1/3">
-          <!-- <BlogSearch /> -->
+          <BlogSearch />
         </div>
         <!-- End Search -->
       </div>
