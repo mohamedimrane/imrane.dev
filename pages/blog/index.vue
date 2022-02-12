@@ -27,5 +27,13 @@
 
 <script>
 export default {
+  async asyncData({ $content }) {
+    const articles = await $content("").fetch()
+
+    return {
+      articles
+    }
+  }
+
 }
 </script>
