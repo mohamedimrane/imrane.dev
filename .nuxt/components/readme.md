@@ -8,9 +8,9 @@ You can directly use them in pages and other components without the need to impo
 
 - `<AppFooter>` | `<app-footer>` (components/AppFooter.vue)
 - `<AppHeader>` | `<app-header>` (components/AppHeader.vue)
-- `<BlogArticleSnippet>` | `<blog-article-snippet>` (components/blog/BlogArticleSnippet.vue)
-- `<BlogSearch>` | `<blog-search>` (components/blog/BlogSearch.vue)
 - `<IndexAboutMe>` | `<index-about-me>` (components/index/IndexAboutMe.vue)
 - `<IndexContact>` | `<index-contact>` (components/index/IndexContact.vue)
 - `<IndexLatestBlogPosts>` | `<index-latest-blog-posts>` (components/index/IndexLatestBlogPosts.vue)
 - `<IndexSkills>` | `<index-skills>` (components/index/IndexSkills.vue)
+- `<BlogArticleSnippet>` | `<blog-article-snippet>` (components/blog/BlogArticleSnippet.vue)
+- `<BlogSearch>` | `<blog-search>` (components/blog/BlogSearch.vue)
