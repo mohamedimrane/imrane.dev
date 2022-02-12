@@ -8,7 +8,8 @@
         <h4 class="block text-lg font-bold">{{ article.title }}</h4>
         <time class="block text-sm text-secondary-light" :datetime="article.updatedAt">{{ articleFormatedUpdatedAt }}</time>
         <div class="text-primary font-semibold -ml-2">
-          <nuxt-link class="uppercase text-xs hover:bg-primary hover:text-white py-1 px-2 rounded-full transition duration-100 ease-in-out" v-for="tag in article.tags" :key="tag.id" :to="'/blog/tag' + tag.path">{{ tag.title }}</nuxt-link>
+          <nuxt-link
+            v-for="tag in article.tags" :key="tag.id" :to="'/blog/tag/' + tag" class="uppercase text-xs hover:bg-primary hover:text-white py-1 px-2 rounded-full transition duration-100 ease-in-out">{{ tag }}</nuxt-link>
         </div>
       </div>
     </div>

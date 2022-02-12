@@ -15,9 +15,9 @@
                   <nuxt-link class="truncate" :to="'/blog/article' + article.path" :title="article.title">{{ article.title }}</nuxt-link>
                 </div>
 
-                <!-- <div class="space-x-2 text-primary font-semibold">
-                  <nuxt-link class="uppercase text-xs hover:bg-primary hover:text-white py-1 px-2 rounded-full transition duration-100 ease-in-out" v-for="tag in article.node.tags" :key="tag.id" :to="tag.path">{{ tag.title }}</nuxt-link>
-                </div> -->
+                <div class="space-x-2 text-primary font-semibold">
+                  <nuxt-link class="uppercase text-xs hover:bg-primary hover:text-white py-1 px-2 rounded-full transition duration-100 ease-in-out" v-for="tag in article.tags" :key="tag" :to="'/blog/tag/' + tag">{{ tag }}</nuxt-link>
+                </div>
 
                 <p class="text-sm text-secondary-light truncate">{{ article.description }}</p>
               </div>
