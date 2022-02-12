@@ -6,7 +6,7 @@
       </div>
       <div class="w-11/12">
         <h4 class="block text-lg font-bold">{{ article.title }}</h4>
-        <time class="block text-sm text-secondary-light" :datetime="article.datetime">{{ article.date }}</time>
+        <time class="block text-sm text-secondary-light" :datetime="article.updatedAt">{{ articleFormatedUpdatedAt }}</time>
         <div class="text-primary font-semibold -ml-2">
           <nuxt-link class="uppercase text-xs hover:bg-primary hover:text-white py-1 px-2 rounded-full transition duration-100 ease-in-out" v-for="tag in article.tags" :key="tag.id" :to="tag.path">{{ tag.title }}</nuxt-link>
         </div>
@@ -17,7 +17,35 @@
 
 <script>
 export default {
-  props: ["article"]
+
+  props: ["article"],
+
+  computed: {
+    articleFormatedUpdatedAt() {
+      let monthsNames = {
+        1: "January",
+        2: "February",
+        3: "March",
+        4: "April",
+        5: "May",
+        6: "June",
+        7: "July",
+        8: "August",
+        9: "Septembre",
+        10: "October",
+        11: "November",
+        12: "December",
+      }
+
+      let date = new Date(this.article.updatedAt)
+
+      let formatedDate = monthsNames[date.getMonth()+1] + " " + date.getDate() + ", " + date.getFullYear()
+
+      return formatedDate
+    }
+  },
+
+
 }
 </script>
 

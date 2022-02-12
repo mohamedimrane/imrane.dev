@@ -6,10 +6,10 @@
     "description": "Auto imported from components/AppHeader.vue"
   },
   "BlogArticleSnippet": {
-    "description": "Auto imported from components/blog/ArticleSnippet.vue"
+    "description": "Auto imported from components/blog/BlogArticleSnippet.vue"
   },
   "BlogSearch": {
-    "description": "Auto imported from components/blog/Search.vue"
+    "description": "Auto imported from components/blog/BlogSearch.vue"
   },
   "IndexAboutMe": {
     "description": "Auto imported from components/index/IndexAboutMe.vue"

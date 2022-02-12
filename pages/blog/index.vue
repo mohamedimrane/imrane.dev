@@ -11,13 +11,13 @@
       <div class="flex space-x-6 mt-10">
         <!-- Start Articles list -->
         <div class="w-2/3 space-y-4">
-          <!--//! <ArticleSnippet v-for="edge in $page.articles.edges" :key="edge.node.id" :article="edge.node" /> -->
+          <BlogArticleSnippet v-for="article in articles" :key="article.id" :article="article" />
         </div>
         <!-- End Articles list -->
 
         <!-- Start Search -->
         <div class="w-1/3">
-          <Search />
+          <!-- <BlogSearch /> -->
         </div>
         <!-- End Search -->
       </div>
