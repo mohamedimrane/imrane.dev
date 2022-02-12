@@ -7,22 +7,22 @@
 
       <div class="mt-6 flex">
         <div class="grid grid-cols-2 gap-x-10 gap-y-10 h-full col-span-2 w-2/3 flex-1">
-          <!--//! <div v-for="article in articles" :key="article.node.id" class="transform hover:scale-102 transition-transform duration-100 ease-in-out">
+          <div v-for="article in articles" :key="article.id" class="transform hover:scale-102 transition-transform duration-100 ease-in-out">
             <div class="bg-primary rounded-lg transform translate-x-1 translate-y-1">
               <div class="bg-white border-2 border-primary rounded-lg p-5 space-y-2 transform -translate-x-1 -translate-y-1">
                 <div class="flex items-center text-lg font-bold space-x-2">
-                  <img :src="article.node.icon.path" :alt="article.node.icon.alt" class="w-8 h-8" />
-                  <NuxtLink class="truncate" :to="article.node.path" :title="article.node.title">{{ truncate(article.node.title, 27) }}</NuxtLink>
+                  <img :src="article.icon.path" :alt="article.icon.alt" class="w-8 h-8" />
+                  <NuxtLink class="truncate" :to="'blog/article' + article.path" :title="article.title">{{ article.title }}</NuxtLink>
                 </div>
 
-                <div class="space-x-2 text-primary font-semibold">
+                <!-- <div class="space-x-2 text-primary font-semibold">
                   <NuxtLink class="uppercase text-xs hover:bg-primary hover:text-white py-1 px-2 rounded-full transition duration-100 ease-in-out" v-for="tag in article.node.tags" :key="tag.id" :to="tag.path">{{ tag.title }}</NuxtLink>
-                </div>
+                </div> -->
 
-                <p class="text-sm text-secondary-light">{{ article.node.description }}</p>
+                <p class="text-sm text-secondary-light truncate">{{ article.description }}</p>
               </div>
             </div>
-          </div> -->
+          </div>
         </div>
 
         <div class="ml-10 -mr-230 -my-30 flex items-center justify-center">
@@ -34,13 +34,18 @@
 
 <script>
 export default {
-  methods: {
-    truncate (string, characters) {
-      if (string.length > characters) {
-        return string.split("").splice(0, characters).join("") + "..."
-      }
-      return string
+
+  async fetch() {
+    this.articles = await this.$content("")
+      .sortBy("createdAt", "desc")
+      .fetch()
+  },
+
+  data() {
+    return {
+      articles: []
     }
-  }
+  },
+
 }
 </script>
