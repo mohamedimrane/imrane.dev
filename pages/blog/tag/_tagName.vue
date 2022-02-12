@@ -8,7 +8,7 @@
       </h2>
 
       <div class="space-y-4 mt-10">
-        <!-- <ArticleSnippet v-for="edge in $page.tag.belongsTo.edges" :key="edge.title" :article="edge.node" /> -->
+        <BlogArticleSnippet v-for="article in articles" :key="article.id" :article="article" />
       </div>
     </div>
   </div>
@@ -16,11 +16,23 @@
 
 <script>
 export default {
+
+  async asyncData({ $content, route }) {
+    const articles = await $content("")
+      .where({ "tags": { $contains:  route.params.tagName} })
+      .fetch()
+
+    return {
+      articles
+    }
+  },
+
   methods: {
     stringCapitalize (str) {
       if (typeof str !== "string") return ""
       return str[0].toUpperCase() + str.slice(1)
     }
   }
+
 }
 </script>

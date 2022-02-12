@@ -1,6 +1,10 @@
 ---
 title: Getting started 3
 description: 'Learn how to fetch your content with `$content`: https://content.nuxtjs.org/fetching.'
+tags: [
+    tag2,
+    tag3
+]
 icon:
     path: icons/netlify.svg
     alt: Test

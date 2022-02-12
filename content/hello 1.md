@@ -1,6 +1,10 @@
 ---
 title: Getting started kjdsfl s sdflj sdlfjsflk sdjflksdjf sdkljfs dlkfjs dklfj sldk
 description: 'Empower your NuxtJS application with @nuxt/content module: write in a content/ directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a Git-based Headless CMS.'
+tags: [
+    tag1,
+    tag2
+]
 icon:
     path: icons/reactjs.svg
     alt: Test

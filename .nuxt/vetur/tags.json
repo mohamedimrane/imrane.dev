@@ -5,6 +5,12 @@
   "AppHeader": {
     "description": "Auto imported from components/AppHeader.vue"
   },
+  "BlogArticleSnippet": {
+    "description": "Auto imported from components/blog/BlogArticleSnippet.vue"
+  },
+  "BlogSearch": {
+    "description": "Auto imported from components/blog/BlogSearch.vue"
+  },
   "IndexAboutMe": {
     "description": "Auto imported from components/index/IndexAboutMe.vue"
   },
@@ -16,11 +22,5 @@
   },
   "IndexSkills": {
     "description": "Auto imported from components/index/IndexSkills.vue"
-  },
-  "BlogArticleSnippet": {
-    "description": "Auto imported from components/blog/BlogArticleSnippet.vue"
-  },
-  "BlogSearch": {
-    "description": "Auto imported from components/blog/BlogSearch.vue"
   }
 }

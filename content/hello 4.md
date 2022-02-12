@@ -1,6 +1,10 @@
 ---
 title: Getting started 4
 description: 'Learn how to fetch your content with `$content`: https://content.nuxtjs.org/fetching.'
+tags: [
+    tag1,
+    tag4
+]
 icon:
     path: icons/reactjs.svg
     alt: Test
