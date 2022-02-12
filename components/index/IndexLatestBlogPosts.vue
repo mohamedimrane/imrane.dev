@@ -12,11 +12,11 @@
               <div class="bg-white border-2 border-primary rounded-lg p-5 space-y-2 transform -translate-x-1 -translate-y-1">
                 <div class="flex items-center text-lg font-bold space-x-2">
                   <img :src="article.icon.path" :alt="article.icon.alt" class="w-8 h-8" />
-                  <NuxtLink class="truncate" :to="'blog/article' + article.path" :title="article.title">{{ article.title }}</NuxtLink>
+                  <nuxt-link class="truncate" :to="'blog/article' + article.path" :title="article.title">{{ article.title }}</nuxt-link>
                 </div>
 
                 <!-- <div class="space-x-2 text-primary font-semibold">
-                  <NuxtLink class="uppercase text-xs hover:bg-primary hover:text-white py-1 px-2 rounded-full transition duration-100 ease-in-out" v-for="tag in article.node.tags" :key="tag.id" :to="tag.path">{{ tag.title }}</NuxtLink>
+                  <nuxt-link class="uppercase text-xs hover:bg-primary hover:text-white py-1 px-2 rounded-full transition duration-100 ease-in-out" v-for="tag in article.node.tags" :key="tag.id" :to="tag.path">{{ tag.title }}</nuxt-link>
                 </div> -->
 
                 <p class="text-sm text-secondary-light truncate">{{ article.description }}</p>

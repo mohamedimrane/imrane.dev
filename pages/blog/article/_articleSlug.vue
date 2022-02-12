@@ -5,7 +5,7 @@
         <h1 class="text-3xl font-bold">{{ article.title }}</h1>
         <p class="text-secondary-light">Last update on <time :datetime="article.updatedAt">{{ articleFormatedUpdatedAt }}</time></p>
         <div class="text-primary font-semibold">
-          <!-- <NuxtLink class="uppercase text-xs hover:bg-primary hover:text-white py-1 px-4 rounded-full transition duration-100 ease-in-out" v-for="tag in $page.article.tags" :key="tag.id" :to="tag.path">{{ tag.title }}</NuxtLink> -->
+          <!-- <nuxt-link class="uppercase text-xs hover:bg-primary hover:text-white py-1 px-4 rounded-full transition duration-100 ease-in-out" v-for="tag in $page.article.tags" :key="tag.id" :to="tag.path">{{ tag.title }}</nuxt-link> -->
         </div>
       </div>
       <div class="markdown-body leading-9 tracking-wide">

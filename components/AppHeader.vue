@@ -1,10 +1,10 @@
 <template>
   <header class="container flex justify-between items-end mt-8">
     <!-- <img src="~/assets/navbar-logo.svg" /> -->
-    <NuxtLink to="/"><h1 class="text-3xl text-primary font-extrabold">Imrane</h1></NuxtLink>
+    <nuxt-link to="/"><h1 class="text-3xl text-primary font-extrabold">Imrane</h1></nuxt-link>
     <nav class="space-x-10 font-semibold">
-      <NuxtLink to="/blog" class="relative">Blog <div class="hidden absolute bottom-0 left-0 w-full h-1 -mb-2 bg-primary rounded-full"></div></NuxtLink>
-      <NuxtLink to="/#contact" class="relative">Contact <div class="hidden absolute bottom-0 left-0 w-full h-1 -mb-2 bg-primary rounded-full"></div></NuxtLink>
+      <nuxt-link to="/blog" class="relative">Blog <div class="hidden absolute bottom-0 left-0 w-full h-1 -mb-2 bg-primary rounded-full"></div></nuxt-link>
+      <nuxt-link to="/#contact" class="relative">Contact <div class="hidden absolute bottom-0 left-0 w-full h-1 -mb-2 bg-primary rounded-full"></div></nuxt-link>
     </nav>
   </header>
 </template>

@@ -4,7 +4,7 @@
       <h1 class="text-10xl font-extrabold text-center text-gray-800">404</h1>
       <h1 class="text-6xl font-extrabold text-center text-primary">Page Not Found</h1>
       <p class="text-lg font-extrabold text-center mt-6 text-gray-600">
-        <NuxtLink to="/" class="hover:cursor-pointer">Go back to home page</NuxtLink>
+        <nuxt-link to="/" class="hover:cursor-pointer">Go back to home page</nuxt-link>
       </p>
     </div>
   </div>

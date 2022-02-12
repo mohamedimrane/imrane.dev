@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink tag="div" class="group bg-primary rounded-lg transform translate-x-1 translate-y-1 transform hover:scale-102 transition-transform duration-100 ease-in-out cursor-pointer" :to="article.path">
+  <nuxt-link tag="div" class="group bg-primary rounded-lg transform translate-x-1 translate-y-1 transform hover:scale-102 transition-transform duration-100 ease-in-out cursor-pointer" :to="article.path">
     <div class="flex p-6 bg-white border-2 border-primary rounded-lg transform -translate-x-1 -translate-y-1">
       <div class="w-1/12 flex items-center">
         <img :src="'/' + article.icon.path" class="w-10 h-10" />
@@ -8,11 +8,11 @@
         <h4 class="block text-lg font-bold">{{ article.title }}</h4>
         <time class="block text-sm text-secondary-light" :datetime="article.datetime">{{ article.date }}</time>
         <div class="text-primary font-semibold -ml-2">
-          <NuxtLink class="uppercase text-xs hover:bg-primary hover:text-white py-1 px-2 rounded-full transition duration-100 ease-in-out" v-for="tag in article.tags" :key="tag.id" :to="tag.path">{{ tag.title }}</NuxtLink>
+          <nuxt-link class="uppercase text-xs hover:bg-primary hover:text-white py-1 px-2 rounded-full transition duration-100 ease-in-out" v-for="tag in article.tags" :key="tag.id" :to="tag.path">{{ tag.title }}</nuxt-link>
         </div>
       </div>
     </div>
-  </NuxtLink>
+  </nuxt-link>
 </template>
 
 <script>
