@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <div>
     <div class="container mb-40 mt-20 flex flex-col">
       <!-- Start Title -->
       <h2 class="text-3xl font-extrabold relative flex items-center self-start ml-2">
@@ -22,7 +22,7 @@
         <!-- End Search -->
       </div>
     </div>
-  </Layout>
+  </div>
 </template>
 
 <script>

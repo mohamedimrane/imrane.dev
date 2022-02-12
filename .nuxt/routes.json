@@ -1,17 +1,10 @@
 [
   {
-    "name": "404",
-    "path": "/404",
-    "component": "/Users/imrane/Dev/Sites/imrane.dev/pages/404.vue",
-    "chunkName": "pages/404",
-    "_name": "_1976cbe9"
-  },
-  {
     "name": "blog",
     "path": "/blog",
-    "component": "/Users/imrane/Dev/Sites/imrane.dev/pages/blog.vue",
-    "chunkName": "pages/blog",
-    "_name": "_e501cf7e"
+    "component": "/Users/imrane/Dev/Sites/imrane.dev/pages/blog/index.vue",
+    "chunkName": "pages/blog/index",
+    "_name": "_4a0eaa04"
   },
   {
     "name": "projects",
@@ -21,10 +14,31 @@
     "_name": "_1518f999"
   },
   {
+    "name": "blog-article-articleSlug",
+    "path": "/blog/article/:articleSlug?",
+    "component": "/Users/imrane/Dev/Sites/imrane.dev/pages/blog/article/_articleSlug.vue",
+    "chunkName": "pages/blog/article/_articleSlug",
+    "_name": "_13d351b9"
+  },
+  {
+    "name": "blog-tag-tagName",
+    "path": "/blog/tag/:tagName?",
+    "component": "/Users/imrane/Dev/Sites/imrane.dev/pages/blog/tag/_tagName.vue",
+    "chunkName": "pages/blog/tag/_tagName",
+    "_name": "_62a829ce"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/Users/imrane/Dev/Sites/imrane.dev/pages/index.vue",
     "chunkName": "pages/index",
     "_name": "_8aada77a"
+  },
+  {
+    "name": "all",
+    "path": "/*",
+    "component": "/Users/imrane/Dev/Sites/imrane.dev/pages/_.vue",
+    "chunkName": "pages/_",
+    "_name": "_c6336c60"
   }
 ]

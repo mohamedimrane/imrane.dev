@@ -1,16 +1,13 @@
 <template>
-  <Layout>
+  <div>
     <IndexAboutMe />
     <IndexSkills />
     <IndexLatestBlogPosts />
     <IndexContact />
-  </Layout>
+  </div>
 </template>
 
 <script>
 export default {
-  metaInfo: {
-    title: "Portfolio"
-  },
 }
 </script>

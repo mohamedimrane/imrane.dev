@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <div>
     <div class="container mt-60 mb-20">
       <h1 class="text-10xl font-extrabold text-center text-gray-800">404</h1>
       <h1 class="text-6xl font-extrabold text-center text-primary">Page Not Found</h1>
@@ -7,7 +7,7 @@
         <NuxtLink to="/" class="hover:cursor-pointer">Go back to home page</NuxtLink>
       </p>
     </div>
-  </Layout>
+  </div>
 </template>
 
 <script>
