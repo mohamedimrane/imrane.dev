@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mt-20">
     <svg class="w-full text-primary fill-current" viewBox="0 0 1400 50" xmlns="http://www.w3.org/2000/svg"><path d="M0 0c309.151 33.333 542.484 50 700 50 157.516 0 390.849-16.667 700-50v50H0V0z"></path></svg>
     <div class="py-40 bg-primary text-white">
       <div class="container">

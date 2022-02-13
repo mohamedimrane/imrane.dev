@@ -12,11 +12,13 @@
 
 <script>
 export default {
+
   data () {
     return {
       theme: "light"
     }
   },
+
   created () {
     if (typeof window !== "undefined") {
       if (!window.localStorage.getItem("theme")) {
@@ -24,16 +26,19 @@ export default {
       }
     }
   },
+
   mounted () {
     if (typeof window !== `undefined`) {
       this.theme = window.localStorage.getItem("theme")
     }
   },
+
   updated () {
     if (typeof window !== `undefined`) {
       this.theme = window.localStorage.getItem("theme")
     }
   },
+
   methods: {
     switchTheme () {
       if (typeof window !== `undefined`) {
@@ -41,5 +46,6 @@ export default {
       }
     }
   }
+
 }
 </script>

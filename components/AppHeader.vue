@@ -11,6 +11,7 @@
 
 <script>
 export default {
+
   computed: {
     theme () {
       if (typeof window !== `undefined`) {
@@ -18,11 +19,13 @@ export default {
       }
     }
   },
+
   updated () {
     if (typeof window !== `undefined`) {
       this.theme = window.localStorage.getItem("theme")
     }
   },
+
   methods: {
     switchTheme () {
       if (typeof window !== `undefined`) {
@@ -30,7 +33,8 @@ export default {
         this.$emit("themeSwitched")
       }
     }
-  },
+  }
+
 }
 </script>
 

@@ -31,6 +31,7 @@
 
 <script>
 export default {
+
   data() {
     return {
       projects: [
@@ -78,25 +79,7 @@ export default {
         },
       ]
     }
-  },
-  metaInfo: {
-    title: "Projects",
-    meta: [
-      {
-        key: "title",
-        name: "title",
-        content: "Projects | Mohamed Imrane Chehabi"
-      },
-      {
-        key: "description",
-        name: "description",
-        content: ""
-      },
-      {
-        name: "author",
-        content: ""
-      }
-    ]
   }
+
 }
 </script>

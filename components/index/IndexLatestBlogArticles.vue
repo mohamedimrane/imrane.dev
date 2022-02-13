@@ -45,7 +45,7 @@ export default {
     return {
       articles: []
     }
-  },
+  }
 
 }
 </script>
