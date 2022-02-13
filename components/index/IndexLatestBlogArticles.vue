@@ -2,7 +2,7 @@
     <div class="container py-20 flex flex-col">
       <h2 class="text-3xl font-extrabold relative flex items-center self-start">
         <span class="absolute inline-block w-full h-4 mt-2 -ml-2 bg-primary"></span>
-        <span class="z-50">Latest Blog Posts</span>
+        <span class="z-50">Latest Blog Articles</span>
       </h2>
 
       <div class="mt-6 flex">
@@ -26,7 +26,7 @@
         </div>
 
         <div class="ml-10 -mr-230 -my-30 flex items-center justify-center">
-          <img src="~/assets/illustrations/latest-blog-posts.svg" class="block"/>
+          <img src="~/assets/illustrations/latest-blog-articles.svg" class="block"/>
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@
   <div>
     <IndexAboutMe />
     <IndexSkills />
-    <IndexLatestBlogPosts />
+    <IndexLatestBlogArticles />
     <IndexContact />
   </div>
 </template>

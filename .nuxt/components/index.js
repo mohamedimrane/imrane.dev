@@ -1,11 +1,11 @@
 export { default as AppFooter } from '../../components/AppFooter.vue'
 export { default as AppHeader } from '../../components/AppHeader.vue'
-export { default as IndexAboutMe } from '../../components/index/IndexAboutMe.vue'
-export { default as IndexContact } from '../../components/index/IndexContact.vue'
-export { default as IndexLatestBlogPosts } from '../../components/index/IndexLatestBlogPosts.vue'
-export { default as IndexSkills } from '../../components/index/IndexSkills.vue'
 export { default as BlogArticleSnippet } from '../../components/blog/BlogArticleSnippet.vue'
 export { default as BlogSearch } from '../../components/blog/BlogSearch.vue'
+export { default as IndexAboutMe } from '../../components/index/IndexAboutMe.vue'
+export { default as IndexContact } from '../../components/index/IndexContact.vue'
+export { default as IndexLatestBlogArticles } from '../../components/index/IndexLatestBlogArticles.vue'
+export { default as IndexSkills } from '../../components/index/IndexSkills.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

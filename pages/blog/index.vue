@@ -4,7 +4,7 @@
       <!-- Start Title -->
       <h2 class="text-3xl font-extrabold relative flex items-center self-start ml-2">
         <span class="absolute inline-block w-full h-3 mt-2 -ml-2 bg-primary"></span>
-        <span class="z-50">Blog Posts</span>
+        <span class="z-50">Blog Articles</span>
       </h2>
       <!-- End Title -->
 
