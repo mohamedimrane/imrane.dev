@@ -1,6 +1,6 @@
 module.exports = {
   scan: {
-    dirs: ["./src"],
+    dirs: ["./components", "./layouts", "./pages"],
     exclude: [
       "node_modules",
       ".git",
