@@ -1,6 +1,6 @@
 <template>
   <div>
-    <main class="container mt-20 mb-40">
+    <main class="container mt-20 mb-20 lg:mb-40">
       <div class="space-y-2">
         <h1 class="text-3xl font-bold">{{ article.title }}</h1>
         <p class="text-secondary-light">Last update on <time :datetime="article.updatedAt">{{ articleFormatedUpdatedAt }}</time></p>
