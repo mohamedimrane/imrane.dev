@@ -3,8 +3,8 @@
     <!-- <img src="~/assets/navbar-logo.svg" /> -->
     <nuxt-link to="/"><h1 class="text-3xl text-primary font-extrabold">Imrane</h1></nuxt-link>
     <nav class="space-x-10 font-semibold">
-      <nuxt-link to="/blog" class="relative">Blog <div class="hidden absolute bottom-0 left-0 w-full h-1 -mb-2 bg-primary rounded-full"></div></nuxt-link>
-      <nuxt-link to="/#contact" class="relative">Contact <div class="hidden absolute bottom-0 left-0 w-full h-1 -mb-2 bg-primary rounded-full"></div></nuxt-link>
+      <nuxt-link to="/blog" class="relative text-xl lg:text-base">Blog <div class="hidden absolute bottom-0 left-0 w-full h-1 -mb-2 bg-primary rounded-full"></div></nuxt-link>
+      <nuxt-link to="/#contact" class="relative text-xl lg:text-base">Contact <div class="hidden absolute bottom-0 left-0 w-full h-1 -mb-2 bg-primary rounded-full"></div></nuxt-link>
     </nav>
   </header>
 </template>

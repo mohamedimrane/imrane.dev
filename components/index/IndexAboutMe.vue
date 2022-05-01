@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-60 grid grid-cols-2 gap-x-20">
+  <div class="container mt-30 lg:mt-60 grid grid-cols-2 gap-x-20">
     <div>
       <div class="font-extrabold">
         <h1 class="text-6xl">Mohamed Imrane Chehabi</h1>
