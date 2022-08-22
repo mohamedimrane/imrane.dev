@@ -17,7 +17,7 @@
       <div class="bg-white border-2 border-primary rounded-lg transform -translate-x-1 -translate-y-1 px-4">
         <div v-for="result in searchResults" :key="result.id" class="border-b-1 last:border-b-0 py-4">
           <nuxt-link :to="'/blog/article' + result.path" class="inline-block font-bold hover:text-primary transition-colors duration-100 ease-in-out">{{ result.title }}</nuxt-link>
-          <p class="text-xs text-secondary-light">{{ result.description }}</p>
+          <p class="text-xs text-secondary-light">{{ truncate(result.description, 100) }}</p>
         </div>
       </div>
     </div>
@@ -66,6 +66,13 @@ export default {
       this.searchTerm = ""
       this.highlightedIndex = 0
     },
+    truncate(text, length) {
+      if (text.length <= length) {
+        return text
+      }
+
+      return text.slice(0, length) + "..."
+    }
   }
 
 }
