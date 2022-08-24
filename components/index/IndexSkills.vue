@@ -9,7 +9,7 @@
             <p class="mt-6 text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, nisi inventore temporibus suscipit molestias ab!</p>
           </div>
 
-          <div class="mt-10 lg:mt-0 grid grid-cols-5 lg:grid-cols-3 gap-y-10">
+          <div class="mt-10 lg:mt-0 grid grid-cols-3 md:grid-cols-5 lg:grid-cols-3 gap-y-10">
             <a class="transform hover:scale-110 transition-transform duration-100 ease-in-out" href="http://laravel.com/" target="_blanck">
               <img class="w-20 h-20 mx-auto" src="~/assets/logos/laravel.svg" />
             </a>
